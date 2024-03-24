@@ -31,8 +31,8 @@
             </defs>
           </svg>
         </a>
-        <a class="header__link__title" href="#">
-          <svg class="header__link__title-logo" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="header__link-title" href="#">
+          <svg class="header__link-title-logo" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_135_3354)">
               <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111" />
               <path d="M15.2527 0.23077H19.7574L23.0767 17.7692H19.4413L18.8091 14.0769H16.2011L15.5689 17.7692H11.8545L15.2527 0.23077ZM18.493 11.7692L17.5446 4.92308L16.5963 11.7692H18.493Z" fill="#111111" />
@@ -52,8 +52,8 @@
           </svg>
         </a>
         <button class="header__menu" type="button">
-          <img class="header__menu__toggle header__menu__toggle--open" src="images/menu_open.svg" alt="Открыть меню">
-          <img class="header__menu__toggle header__menu__toggle--close" src="images/menu_close.svg" alt="закрыть меню">
+          <img class="header__menu-toggle header__menu-toggle--open" src="images/menu_open.svg" alt="Открыть меню">
+          <img class="header__menu-toggle header__menu-toggle--close" src="images/menu_close.svg" alt="закрыть меню">
         </button>
         <nav class="header__navigation">
           <ul class="header__navigation__list">
@@ -74,96 +74,96 @@
     <section class="selection">
       <div class="container">
         <h3 class="visually-hidden">Анкета</h3>
-        <form class="selection__form fields" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="fields__cat__question">
-            <label class="fields__question-form" for="cat-name">
-              <span class="fields__question-text">ИМЯ:*</span>
-              <input class="fields__input-text" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+        <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="selection__fields cat-info">
+            <label class="selection__fields-form" for="cat-name">
+              <span class="selection__fields-text">ИМЯ:*</span>
+              <input class="selection__fields__input-text" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
             </label>
-            <label class="fields__question-form" for="cat-weight">
-              <span class="fields__question-text">Вес (кг):*</span>
-              <input class="fields__input-text" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
+            <label class="selection__fields-form" for="cat-weight">
+              <span class="selection__fields-text">Вес (кг):*</span>
+              <input class="selection__fields__input-text" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
             </label>
-            <label class="fields__question-form" for="cat-age">
-              <span class="fields__question-text">Возраст (лет):</span>
-              <input class="fields__input-text" type="text" id="cat-age" name="cat-age" placeholder="7">
+            <label class="selection__fields-form" for="cat-age">
+              <span class="selection__fields-text">Возраст (лет):</span>
+              <input class="selection__fields__input-text" type="text" id="cat-age" name="cat-age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="fields__program__question">
-            <ul class="fields__program__question-list">
-              <li class="fields__program__question-item">
-                <label class="fields__program__question__wraper">
-                  <input class="fields__program__question-radio" type="radio" value="weight-loss" name="program">
-                  <span class="fields__program__question-text">похудение</span>
+          <fieldset class="selection__fields program">
+            <ul class="selection__fields__list">
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__item-wraper">
+                  <input class="selection__fields__item-input" type="radio" value="weight-loss" name="program">
+                  <span class="selection__fields__item-text">похудение</span>
                 </label>
               </li>
-              <li class="fields__program__question-item">
-                <label class="fields__program__question__wraper">
-                  <input class="fields__program__question-radio" type="radio" value="weight-gain" name="program">
-                  <span class="fields__program__question-text">Набор массы</span>
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__list-wraper">
+                  <input class="selection__fields__item-input" type="radio" value="weight-gain" name="program">
+                  <span class="selection__fields__item-text">Набор массы</span>
                 </label>
               </li>
-              <li class="fields__program__question-item">
-                <label class="fields__program__question__wraper">
-                  <input class="fields__program__question-radio" type="radio" value="Need-advice" name="program">
-                  <span class="fields__program__question-text">Не знаю (Нужен ваш совет)</span>
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__list-wraper">
+                  <input class="selection__fields__item-input" type="radio" value="Need-advice" name="program">
+                  <span class="selection__fields__item-text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="fields__owner-contacts">
-            <h2 class="fields__title">Контактные данные (владельца кота)</h2>
-            <label class="fields__owner-email" for="e-mail">
-              <span class="fields__owner-text">E-mail:*</span>
-              <input class="fields__text" type="email" required placeholder="kuklachev@gmail.com">
-              <svg class="fields__icon-email" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <fieldset class="selection__fields contacts">
+            <h2 class="selection__fields__title">Контактные данные (владельца кота)</h2>
+            <label class="selection__fields-email" for="e-mail">
+              <span class="selection__fields-text">E-mail:*</span>
+              <input class="selection__fields__input-text" type="email" required placeholder="kuklachev@gmail.com">
+              <svg class="selection__fields__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </label>
-            <label class="fields__owner-phone" for="phone">
-              <span class="fields__owner-text">Телефон:*</span>
-              <input class="fields__text" type="tel" placeholder="8 (960) 900-60-90">
-              <svg class="fields__icon-phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <label class="selection__fields phone" for="phone">
+              <span class="selection__fields-text">Телефон:*</span>
+              <input class="selection__fields__input-text" type="tel" placeholder="8 (960) 900-60-90">
+              <svg class="selection__fields__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </label>
           </fieldset>
-          <fieldset class="fields__comment">
-            <h2 class="fields__title" >Комментарий</h2>
-            <textarea class="fields__comment-area" name="comment" id="area" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <fieldset class="selection__fields comments">
+            <h2 class="selection__fields__title" >Комментарий</h2>
+            <textarea class="selection__fields__text-area" name="comment" id="area" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
-          <fieldset class="fields__extra">
-            <h2 class="fields__title">Дополнительно</h2>
-            <ul class="fields__extra-list">
-              <li class="fields__extra-item">
-                <label class="fields__extra" for="sugar">
-                  <input class="fields__extra-checkbox" type="checkbox" name="" id="sugar">
-                  <span class="fields__question-text">сахарозаменитель</span>
+          <fieldset class="selection__fields extra">
+            <h2 class="selection__fields__title">Дополнительно</h2>
+            <ul class="selection__fields__list">
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__item-wrapper" for="sugar">
+                  <input class="selection__fields__item-input" type="checkbox" name="" id="sugar">
+                  <span class="selection__fields__item-text">сахарозаменитель</span>
                 </label>
               </li>
-              <li class="fields__extra-item">
-                <label class="fields__extra" for="water">
-                  <input class="fields__extra__checkbox" type="checkbox" name="" id="water">
-                  <span class="fields__question-text">питьевая вода</span>
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__item-wrapper" for="water">
+                  <input class="selection__fields__item-input" type="checkbox" name="" id="water">
+                  <span class="selection__fields__item-text">питьевая вода</span>
                 </label>
               </li>
-              <li class="fields__extra-item">
-                <label class="fields__extra" for="milk">
-                  <input class="fields__extra__checkbox" type="checkbox" name="" id="milk">
-                  <span class="fields__question-text">молоко</span>
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__item-wrapper" for="milk">
+                  <input class="selection__fields__item-input" type="checkbox" name="" id="milk">
+                  <span class="selection__fields__item-text">молоко</span>
                 </label>
               </li>
-              <li class="fields__extra-item">
-                <label class="fields__extra" for="vitamins">
-                  <input class="fields__extra__checkbox" type="checkbox" name="" id="vitamins">
-                  <span class="fields__question-text">витамины</span>
+              <li class="selection__fields__list-item">
+                <label class="selection__fields__item-wrapper" for="vitamins">
+                  <input class="selection__fields__item-input" type="checkbox" name="" id="vitamins">
+                  <span class="selection__fields__item-text">витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <div class="fields__button__block">
-            <button class="fields__button button" type="submit">отправить заявку</button>
-            <p class="fields__text">* — Обязательные поля</p>
+          <div class="selection__fields__button-wrapper">
+            <button class="selection__fields__button button" type="submit">отправить заявку</button>
+            <p class="selection__fields__text">* — Обязательные поля</p>
           </div>
         </form>
       </div>
@@ -182,7 +182,7 @@
     <div class="container">
       <div class="footer__logo">
         <a href="index.html">
-          <svg class="footer__logo__text" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_135_3354)">
               <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111" />
               <path d="M15.2527 0.23077H19.7574L23.0767 17.7692H19.4413L18.8091 14.0769H16.2011L15.5689 17.7692H11.8545L15.2527 0.23077ZM18.493 11.7692L17.5446 4.92308L16.5963 11.7692H18.493Z" fill="#111111" />
