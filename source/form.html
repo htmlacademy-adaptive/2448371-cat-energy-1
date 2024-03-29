@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat Energy</title>
+  <title>Cat Energy Form</title>
 </head>
 <body>
   <header class="header">
@@ -66,88 +66,115 @@
     </div>
   </header>
   <main>
-    <div class="container">
-      <section class="main">
-        <h1 class="main__title">Функциональное
-          питание для котов</h1>
-        <p class="main__tagline">Занялся собой? Займись котом!</p>
-        <a class="main__button button " href="form.html">подобрать программу</a>
-      </section>
-      <section class="program">
-        <h2 class="visually-hidden">Список программ</h2>
-        <ul class="program__list">
-          <li class="program__list-item">
-            <!-- поставить круг с помощью before -->
-            <h3 class="program__title">похудение</h3>
-            <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program__link" href="catalog.html">каталог slim
-              <!-- поставить сюда стрелку с помощью афтер -->
-            </a>
-          </li>
-          <li class="program__list-item">
-            <!-- поставить круг с помощью before -->
-            <h3 class="program__title">Набор массы</h3>
-            <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="program__link" href="catalog.html">каталог pro
-              <!-- поставить сюда стрелку с помощью афтер -->
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="instruction">
-        <h2 class="instruction__title">Как это работает</h2>
-        <ul class="instruction__list">
-          <li class="instruction__item instruction__item--1">
-            <!-- Картинку с помощью before -->
-            <p class="instruction__item-text">Функциональное питание
-              содержит только полезные
-              питательные вещества.</p>
-          </li>
-          <li class="instruction__item instruction__item--2">
-            <!-- Картинку с помощью before -->
-            <p class="instruction__item-text">Выпускается в виде порошка,
-              который нужно лишь залить
-              кипятком и готово.</p>
-          </li>
-          <li class="instruction__item instruction__item--3">
-            <!-- Картинку с помощью before -->
-            <p class="instruction__item-text">Замените один-два приема
-              обычной еды на наше
-              функциональное питание.</p>
-          </li>
-          <li class="instruction__item instruction__item--4">
-            <!-- Картинку с помощью before -->
-            <p class="instruction__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="example__result">
-          <div class="example__result-item">
-            <strong class="example__result-title">5 КГ</strong>
-            <p class="example__result-text">снижение веса</p>
+    <section class="main">
+      <h1 class="main__title">Подбор программы</h1>
+      <p class="main__text">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+    </section>
+    <section class="selection">
+      <div class="container">
+        <h3 class="visually-hidden">Анкета</h3>
+        <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="selection__fields">
+            <label class="selection__fields-form" for="cat-name">
+              <span class="selection__fields-text">ИМЯ:*</span>
+              <input class="selection__fields-input-text" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+            </label>
+            <label class="selection__fields-form" for="cat-weight">
+              <span class="selection__fields-text">Вес (кг):*</span>
+              <input class="selection__fields-input-text" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
+            </label>
+            <label class="selection__fields-form" for="cat-age">
+              <span class="selection__fields-text">Возраст (лет):</span>
+              <input class="selection__fields-input-text" type="text" id="cat-age" name="cat-age" placeholder="7">
+            </label>
+          </fieldset>
+          <fieldset class="selection__fields">
+            <ul class="selection__fields-list">
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-item-wraper">
+                  <input class="selection__fields-item-input" type="radio" value="weight-loss" name="program">
+                  <span class="selection__fields-item-text">похудение</span>
+                </label>
+              </li>
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-list-wraper">
+                  <input class="selection__fields-item-input" type="radio" value="weight-gain" name="program">
+                  <span class="selection__fields-item-text">Набор массы</span>
+                </label>
+              </li>
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-list-wraper">
+                  <input class="selection__fields-item-input" type="radio" value="Need-advice" name="program">
+                  <span class="selection__fields-item-text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="selection__fields">
+            <h2 class="selection__fields-title">Контактные данные (владельца кота)</h2>
+            <label class="selection__fields-email" for="e-mail">
+              <span class="selection__fields-text">E-mail:*</span>
+              <input class="selection__fields-input-text" type="email" required placeholder="kuklachev@gmail.com">
+              <svg class="selection__fields-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </label>
+            <label class="selection__fields" for="phone">
+              <span class="selection__fields-text">Телефон:*</span>
+              <input class="selection__fields-input-text" type="tel" placeholder="8 (960) 900-60-90">
+              <svg class="selection__fields-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </label>
+          </fieldset>
+          <fieldset class="selection__fields">
+            <h2 class="selection__fields-title" >Комментарий</h2>
+            <textarea class="selection__fields-text-area" name="comment" id="area" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          </fieldset>
+          <fieldset class="selection__fields">
+            <h2 class="selection__fields-title">Дополнительно</h2>
+            <ul class="selection__fields-list">
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-item-wrapper" for="sugar">
+                  <input class="selection__fields-item-input" type="checkbox" name="" id="sugar">
+                  <span class="selection__fields-item-text">сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-item-wrapper" for="water">
+                  <input class="selection__fields-item-input" type="checkbox" name="" id="water">
+                  <span class="selection__fields-item-text">питьевая вода</span>
+                </label>
+              </li>
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-item-wrapper" for="milk">
+                  <input class="selection__fields-item-input" type="checkbox" name="" id="milk">
+                  <span class="selection__fields-item-text">молоко</span>
+                </label>
+              </li>
+              <li class="selection__fields-list-item">
+                <label class="selection__fields-item-wrapper" for="vitamins">
+                  <input class="selection__fields-item-input" type="checkbox" name="" id="vitamins">
+                  <span class="selection__fields-item-text">витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="selection__fields-button-wrapper">
+            <button class="selection__fields-button button" type="submit">отправить заявку</button>
+            <p class="selection__fields-text">* — Обязательные поля</p>
           </div>
-          <div class="example__result-item">
-            <strong class="example__result-title"> 60 ДНЕЙ</strong>
-            <p class="example__result-text">затрачено времени</p>
-          </div>
-          <span class="example__price">Затраты на питание: 15 000 РУБ. </span>
-        </div>
-        <div class="example__slider">
-          <div class="example__slider-image-wrapper"></div>
-          <div class="example__slider-image-wrapper"></div>
-        </div>
-      </section>
-    </div>
+        </form>
+      </div>
+    </section>
     <section class="contacts">
       <div class="container">
         <div class="contacts__info">
           <h3 class="contacts__info-title">приглашаем <br>к сотрудничеству <br> дилеров!</h3>
           <p class="contacts__info-text">ул. Большая<br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__info-map"></div>
       </div>
     </section>
   </main>
