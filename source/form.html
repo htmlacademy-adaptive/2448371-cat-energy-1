@@ -8,8 +8,8 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
-      <div class="header__container">
+    <div class="header__container">
+      <div class="header__top">
         <a class="header__link" href="#">
           <h3 class="visually-hidden">Cat Energy</h3>
           <svg class="header__logo" width="33" height="38" viewBox="0 0 33 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,30 +53,32 @@
           </svg>
         </a>
         <button class="header__menu" type="button">
-          <img class="header__menu-toggle header__menu-toggle--open" src="images/menu_open.svg" alt="Открыть меню">
-          <img class="header__menu-toggle header__menu-toggle--close" src="images/menu_close.svg" alt="закрыть меню">
+          <svg class="header__menu-toggle header__menu-toggle--open" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(.68659 -.72705 .68659 .72705 2 20)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/><path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/></svg>
+          <!-- <svg class="header__menu-toggle header__menu-toggle--close"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24"/></svg> -->
         </button>
-        <nav class="header__navigation">
-          <ul class="header__navigation-list">
-            <li class="header__navigation-list-item">главная</li>
-            <li class="header__navigation-list-item">каталог продукции</li>
-            <li class="header__navigation-list-item">подбор программы</li>
-          </ul>
-        </nav>
       </div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="index.html">главная</a></li>
+          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="catalog.html">каталог продукции</a></li>
+          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="form.html">подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
-    <section class="main">
-      <h1 class="main__title">Подбор программы</h1>
-      <p class="main__text">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
+    <section class="main-form">
+      <div class="main-form__container">
+        <h1 class="main-form__title">Подбор программы</h1>
+        <p class="main-form__text">Заполните анкету, и мы подберем <br>
+          программу питания для вашего кота</p>
+      </div>
     </section>
     <section class="selection">
-      <div class="container">
+      <div class="selection__container">
         <h3 class="visually-hidden">Анкета</h3>
         <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="selection__fields">
+          <fieldset class="selection__fields selection__fields--personal">
             <label class="selection__fields-form" for="cat-name">
               <span class="selection__fields-text">ИМЯ:*</span>
               <input class="selection__fields-input-text" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
@@ -90,10 +92,10 @@
               <input class="selection__fields-input-text" type="text" id="cat-age" name="cat-age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="selection__fields">
+          <fieldset class="selection__fields selection__fields--program">
             <ul class="selection__fields-list">
               <li class="selection__fields-list-item">
-                <label class="selection__fields-item-wraper">
+                <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="weight-loss" name="program">
                   <span class="selection__fields-item-text">похудение</span>
                 </label>
@@ -112,7 +114,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="selection__fields">
+          <fieldset class="selection__fields selection__fields--contacts">
             <h2 class="selection__fields-title">Контактные данные (владельца кота)</h2>
             <label class="selection__fields-email" for="e-mail">
               <span class="selection__fields-text">E-mail:*</span>
@@ -129,11 +131,11 @@
               </svg>
             </label>
           </fieldset>
-          <fieldset class="selection__fields">
+          <fieldset class="selection__fields selection__fields--comment">
             <h2 class="selection__fields-title" >Комментарий</h2>
             <textarea class="selection__fields-text-area" name="comment" id="area" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </fieldset>
-          <fieldset class="selection__fields">
+          <fieldset class="selection__fields selection__fields--extra">
             <h2 class="selection__fields-title">Дополнительно</h2>
             <ul class="selection__fields-list">
               <li class="selection__fields-list-item">
@@ -169,18 +171,28 @@
         </form>
       </div>
     </section>
-    <section class="contacts">
-      <div class="container">
-        <div class="contacts__info">
-          <h3 class="contacts__info-title">приглашаем <br>к сотрудничеству <br> дилеров!</h3>
-          <p class="contacts__info-text">ул. Большая<br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+    <section class="catalog-contacts">
+      <div class="catalog-contacts__container">
+        <div class="catalog-contacts__info">
+          <h3 class="catalog-contacts__info-title">приглашаем <br>к сотрудничеству <br> дилеров!</h3>
+          <p class="catalog-contacts__info-text">ул. Большая<br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
         </div>
-        <div class="contacts__info-map"></div>
+      </div>
+    </section>
+    <section class="location">
+      <div class="location__wrapper" id="map">
+        <img class="location__img" src="./img/location.jpg" alt="Карта офиса">
+        <!-- <div style="position:relative;overflow:hidden;">
+          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a>
+          <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+          </iframe>
+        </div> -->
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="footer__container">
       <div class="footer__logo">
         <a href="index.html">
           <svg class="footer__logo-text" width="101" height="18" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
