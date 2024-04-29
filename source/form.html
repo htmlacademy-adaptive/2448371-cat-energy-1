@@ -67,15 +67,11 @@
     </div>
   </header>
   <main>
-    <section class="main-form">
-      <div class="main-form__container">
-        <h1 class="main-form__title">Подбор программы</h1>
-        <p class="main-form__text">Заполните анкету, и мы подберем <br>
-          программу питания для вашего кота</p>
-      </div>
-    </section>
     <section class="selection">
       <div class="selection__container">
+        <h1 class="selection__title">Подбор программы</h1>
+        <p class="selection__description">Заполните анкету, и мы подберем <br>
+          программу питания для вашего кота</p>
         <h3 class="visually-hidden">Анкета</h3>
         <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="selection__fields selection__fields--personal">
@@ -116,24 +112,24 @@
           </fieldset>
           <fieldset class="selection__fields selection__fields--contacts">
             <h2 class="selection__fields-title">Контактные данные (владельца кота)</h2>
-            <label class="selection__fields-email" for="e-mail">
+            <label class="selection__fields-block" for="e-mail">
               <span class="selection__fields-text">E-mail:*</span>
               <input class="selection__fields-input-text" type="email" required placeholder="kuklachev@gmail.com">
-              <svg class="selection__fields-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="selection__fields-icon selection__fields-icon--email" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </label>
-            <label class="selection__fields" for="phone">
+            <label class="selection__fields-block" for="phone">
               <span class="selection__fields-text">Телефон:*</span>
               <input class="selection__fields-input-text" type="tel" placeholder="8 (960) 900-60-90">
-              <svg class="selection__fields-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="selection__fields-icon selection__fields-icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </label>
           </fieldset>
           <fieldset class="selection__fields selection__fields--comment">
             <h2 class="selection__fields-title" >Комментарий</h2>
-            <textarea class="selection__fields-text-area" name="comment" id="area" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            <textarea class="selection__fields-text-area" name="comment" id="area" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="selection__fields selection__fields--extra">
             <h2 class="selection__fields-title">Дополнительно</h2>
@@ -166,7 +162,7 @@
           </fieldset>
           <div class="selection__fields-button-wrapper">
             <button class="selection__fields-button button" type="submit">отправить заявку</button>
-            <p class="selection__fields-text">* — Обязательные поля</p>
+            <p class="selection__fields-text-description">* — Обязательные поля</p>
           </div>
         </form>
       </div>

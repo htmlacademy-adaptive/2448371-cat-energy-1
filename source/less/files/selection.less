@@ -1,8 +1,31 @@
+.selection {
+  padding-bottom: 32px;
+}
+
 .selection__container {
   width: 320px;
   padding: 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.selection__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+.selection__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 39px;
 }
 
 .selection__fields {
@@ -16,7 +39,7 @@
 
 .selection__fields-form {
   display: flex;
-  height: 45px;
+  min-height: 45px;
   align-items: center;
   font-weight: 400;
   font-size: 16px;
@@ -31,6 +54,7 @@
 }
 
 .selection__fields-input-text {
+  font-family: "Oswald", sans-serif;
   flex-grow: 1;
   height: 45px;
   color: #444444;
@@ -41,6 +65,7 @@
   line-height: 112%;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+  padding: 13px;
 }
 
 .selection__fields-list {
@@ -50,7 +75,7 @@
 }
 
 .selection__fields--personal {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .selection__fields--program {
@@ -70,4 +95,83 @@
 
 .selection__fields-list-item:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+.selection__fields-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 108%;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.selection__fields-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.selection__fields-icon {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+}
+
+.selection__fields--contacts {
+  padding-bottom: 24px;
+  padding-top: 26px;
+}
+
+.selection__fields-text-area {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.selection__fields--comment {
+  padding-bottom: 23px;
+}
+
+.selection__fields-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.selection__fields-button {
+  margin-top: 34px;
+  margin-bottom: 21px;
+  padding: 6px 15px;
+  width: 100%;
+  min-height: 40px;
+  background-color: #68b738;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.selection__fields-text-description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
 }
