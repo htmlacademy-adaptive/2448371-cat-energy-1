@@ -3,10 +3,8 @@
 }
 
 .selection__container {
-  width: 320px;
-  padding: 0 20px;
+  .container;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .selection__title {
@@ -48,16 +46,16 @@
 
 .selection__fields-text {
   margin-right: 13px;
-  color: #444444;
+  color: @special-dark-grey;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
 .selection__fields-input-text {
-  font-family: "Oswald", sans-serif;
+  font-family: @main-family;
   flex-grow: 1;
   height: 45px;
-  color: #444444;
+  color: @special-dark-grey;
   box-sizing: border-box;
   width: 100%;
   font-weight: 400;
@@ -124,12 +122,12 @@
 }
 
 .selection__fields-text-area {
-  font-family: "Oswald", sans-serif;
+  font-family: @main-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
-  color: #444444;
+  color: @special-dark-grey;
   padding: 14px;
   height: 150px;
   box-sizing: border-box;
@@ -144,7 +142,7 @@
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
-  color: #444444;
+  color: @special-dark-grey;
 }
 
 .selection__fields-button {
@@ -153,7 +151,7 @@
   padding: 6px 15px;
   width: 100%;
   min-height: 40px;
-  background-color: #68b738;
+  background-color: @basic-green;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -167,7 +165,7 @@
 }
 
 .selection__fields-text-description {
-  font-family: "Lato", sans-serif;
+  font-family: @second-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 114%;
