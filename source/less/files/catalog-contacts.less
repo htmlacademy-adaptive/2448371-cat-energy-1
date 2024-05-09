@@ -6,7 +6,6 @@
 
 .catalog-contacts__container {
   .container;
-  box-sizing: border-box;
 }
 
 .catalog-contacts__info {
@@ -28,4 +27,22 @@
 
 .catalog-contacts__info-text {
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .catalog-contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .catalog-contacts__info-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .catalog-contacts__info-text {
+    font-size: 16px;
+    line-height: 125%;
+  }
 }

@@ -1,6 +1,5 @@
 .header__container {
   .container;
-  box-sizing: border-box;
 }
 
 .header__top {
@@ -36,4 +35,40 @@
 .header__navigation-list-link {
   text-decoration: none;
   color: #000000;
+}
+
+
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 55px;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 39px;
+  }
+
+  .header__top {
+    gap: 13px;
+    padding: 0;
+  }
+
+  .header__navigation-list {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+  }
+
+  .header__navigation-list-item {
+    padding: 0;
+    padding-bottom: 8px;
+    font-size: 18px;
+    line-height: 133%;
+  }
+
+  .header__navigation-list-current {
+    border-bottom: 2px solid @basic-green;
+  }
 }
