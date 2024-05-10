@@ -20,13 +20,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  color: #000000;
+  color: @black;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 41px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding-bottom: 70px;
+  }
+
   .catalog__title {
     font-size: 60px;
     padding-top: 10px;
@@ -49,5 +53,19 @@
     padding-right: 37px;
     margin-left: 0;
     box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding-bottom: 76px;
+  }
+
+  .catalog__list {
+    gap: 80px;
+  }
+
+  .catalog__list-item {
+    width: 20%;
   }
 }

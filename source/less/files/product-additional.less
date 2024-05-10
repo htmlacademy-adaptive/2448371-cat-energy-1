@@ -48,13 +48,13 @@
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .product-additional {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid @special-grey;
     border-top: none;
     display: flex;
     flex-wrap: wrap;
@@ -79,5 +79,25 @@
   .product-additional__table-value {
     font-size: 16px;
     line-height: 125%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .product-additional__title {
+    width: 244px;
+    margin-bottom: 0;
+  }
+
+  .product-additional__button-wrapper {
+    width: 244px;
+  }
+
+  .product-additional__table {
+    margin-bottom: 0;
   }
 }

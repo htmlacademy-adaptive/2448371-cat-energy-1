@@ -9,6 +9,10 @@
   padding: 12px 20px;
 }
 
+.header__logo--tablet {
+  display: none;
+}
+
 .header__menu {
   width: 24px;
   background-color: transparent;
@@ -34,11 +38,11 @@
 
 .header__navigation-list-link {
   text-decoration: none;
-  color: #000000;
+  color: @black;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .header {
     padding-bottom: 55px;
   }
@@ -53,6 +57,22 @@
   .header__top {
     gap: 13px;
     padding: 0;
+  }
+
+  .header__logo--mobile {
+    display: none;
+  }
+
+  .header__link-title-logo {
+    display: none;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__logo--tablet {
+    display: block;
   }
 
   .header__navigation-list {
@@ -70,5 +90,19 @@
 
   .header__navigation-list-current {
     border-bottom: 2px solid @basic-green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__logo--tablet {
+    display: none;
+  }
+
+  .header {
+    padding-bottom: 74px;
+  }
+
+  .header__container {
+    padding-top: 55px;
   }
 }

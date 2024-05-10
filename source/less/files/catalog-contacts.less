@@ -11,6 +11,7 @@
 .catalog-contacts__info {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 26px;
 }
 
 .catalog-contacts__info-title {
@@ -20,19 +21,34 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: @black-2;
   padding: 0 5px;
   box-sizing: border-box;
 }
 
-.catalog-contacts__info-text {
+.catalog-contacts__info-street,
+.catalog-contacts__info-city {
   margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .catalog-contacts {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+
+  .catalog-contacts__container {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    left: 40px;
+    width: 570px;
+    background-color: @white;
+    padding: 0  80px;
   }
 
   .catalog-contacts__info-title {
@@ -41,8 +57,14 @@
     line-height: 130%;
   }
 
-  .catalog-contacts__info-text {
+  .catalog-contacts__info-street {
     font-size: 16px;
     line-height: 125%;
+    margin-bottom: 19px;
+  }
+
+  .catalog-contacts__info {
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }

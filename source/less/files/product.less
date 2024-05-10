@@ -75,7 +75,7 @@
   line-height: 125%;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
 }
 
@@ -89,7 +89,7 @@
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
-  color: #111111;
+  color: @black;
   margin: 0;
   margin-bottom: 8px;
   font-weight: 400;
@@ -131,7 +131,7 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .product__wrapper {
     flex-direction: column;
     align-items: center;
@@ -173,7 +173,7 @@
   .product_table-line {
     padding-top: 8px;
     padding-bottom: 8px;
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid @special-grey;
   }
 
   .product__button-wrapper {
@@ -181,7 +181,7 @@
   }
 
   .product__wrapper-more {
-    padding: 54px 37px 40px;
+    padding-top: 88px;
     margin-top: 35px;
     border: 1px solid #e6e6e6;
   }
