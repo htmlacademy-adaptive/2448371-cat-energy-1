@@ -48,3 +48,41 @@
   text-decoration: none;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .program__title {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 24px;
+  }
+
+  .program__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: @black;
+    margin-bottom: 48px;
+  }
+
+  .program__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program {
+    padding-bottom: 71px;
+  }
+
+  .program__list {
+    display: flex;
+    gap: 80px;
+  }
+
+  .program__list-item {
+    width: 570px;
+  }
+
+  .program__list-item:nth-child(1) {
+    margin-bottom: 0;
+  }
+}

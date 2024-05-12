@@ -8,4 +8,39 @@
 
 .promo__wraper {
   text-align: center;
+  position: relative;
 }
+
+.promo-img--big {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .promo-img--small {
+    display: none;
+  }
+
+  .promo-img--big {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding-bottom: 82px;
+  }
+
+  .promo__wraper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 551px;
+  }
+
+  .promo-img--big {
+    width: 552px;
+    height: 499px;
+    order: 4;
+  }
+}
+
