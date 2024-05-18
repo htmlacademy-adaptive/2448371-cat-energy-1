@@ -11,7 +11,6 @@
   font-size: 36px;
   line-height: 100%;
   color: @black;
-  margin-top: 27px;
   margin-bottom: 37px;
 }
 
@@ -271,10 +270,98 @@
     height: 54px;
     margin-right: 60px;
     margin-bottom: 0;
+    font-size: 20px;
+    line-height: 130%;
   }
 
   .selection__fields-text-description {
     font-size: 16px;
     line-height: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .selection__title {
+    margin-bottom: 55px;
+    margin-left: 0;
+  }
+
+  .selection__description {
+    margin-bottom: 66px;
+    margin-left: 0;
+  }
+
+  .selection__form {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 70px;
+  }
+
+  .selection__fields--personal {
+    margin-bottom: 0;
+    width: 570px;
+  }
+
+  .selection__fields--program {
+    border: 1px solid #d9d9d9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    width: 568px;
+  }
+
+  .selection__fields-input-text {
+    height: 52px;
+  }
+
+  .selection__fields-list {
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 28px;
+  }
+
+  .selection__fields-list-item {
+    width: 100%;
+  }
+
+  .selection__fields--contacts {
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .selection__fields-title {
+    width: 100%;
+  }
+
+  .selection__fields-block {
+    width: 570px;
+  }
+
+  .selection__fields--comment {
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .selection__fields-text-area {
+    width: 100%;
+  }
+
+  .selection__fields--extra {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .selection__fields-list--extra {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .selection__fields-button {
+    width: 570px;
   }
 }

@@ -1,3 +1,7 @@
+.header {
+  margin-bottom: 27px;
+}
+
 .header__container {
   .container;
 }
@@ -48,7 +52,7 @@
 
 @media (min-width: @tablet-width) {
   .header {
-    padding-bottom: 65px;
+    margin-bottom: 65px;
   }
 
   .header__container {
@@ -102,20 +106,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header {
+    margin-bottom: 74px;
+  }
+
+  .header__container {
+    padding-top: 55px;
+  }
+
   .header__logo--tablet {
     display: none;
   }
 
   .header__logo--desktop {
     display: block;
-  }
-
-
-  .header {
-    padding-bottom: 74px;
-  }
-
-  .header__container {
-    padding-top: 55px;
   }
 }
