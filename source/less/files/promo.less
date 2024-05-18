@@ -16,12 +16,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo__wraper {
+    display: flex;
+    flex-direction: column;
+  }
+
   .promo-img--small {
     display: none;
   }
 
   .promo-img--big {
     display: block;
+    order: 4;
+    z-index: -1;
+    margin-top: -85px;
   }
 }
 
@@ -31,16 +39,15 @@
   }
 
   .promo__wraper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 551px;
+    display: grid;
+    grid-template-columns: 437px 163px 610px;
   }
 
   .promo-img--big {
     width: 552px;
     height: 499px;
-    order: 4;
+    grid-column: 2/4;
+    margin: 0;
+    grid-row: 1 / 5;
   }
 }
-

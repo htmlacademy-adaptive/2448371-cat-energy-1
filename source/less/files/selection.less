@@ -72,7 +72,7 @@
 }
 
 .selection__fields--personal {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .selection__fields--program {
@@ -80,6 +80,7 @@
   border-bottom: 1px solid #d9d9d9;
   padding-top: 22px;
   padding-bottom: 19px;
+  margin-bottom: 26px;
 }
 
 .selection__fields-list-item {
@@ -116,8 +117,7 @@
 }
 
 .selection__fields--contacts {
-  padding-bottom: 24px;
-  padding-top: 26px;
+  margin-bottom: 24px;
 }
 
 .selection__fields-text-area {
@@ -133,7 +133,7 @@
 }
 
 .selection__fields--comment {
-  padding-bottom: 23px;
+  margin-bottom: 23px;
 }
 
 .selection__fields-item-text {
@@ -144,8 +144,15 @@
   color: @special-dark-grey;
 }
 
+.selection__fields--extra {
+  margin-bottom: 34px;
+}
+
+.selection__fields-button-wrapper {
+  margin-bottom: 32px;
+}
+
 .selection__fields-button {
-  margin-top: 34px;
   margin-bottom: 21px;
   padding: 6px 15px;
   width: 100%;
@@ -171,4 +178,103 @@
   text-align: center;
   color: @black;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .selection__title {
+    margin: 0;
+    margin-bottom: 54px;
+    font-size: 60px;
+    margin-left: 40px;
+  }
+
+  .selection__description {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 40px;
+  }
+
+  .selection__form {
+    margin: 0 40px;
+  }
+
+  .selection__fields {
+    gap: 20px;
+  }
+
+  .selection__fields-title {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 76px;
+  }
+
+  .selection__fields-text {
+    font-size: 20px;
+  }
+
+  .selection__fields-input-text {
+    font-size: 20px;
+  }
+
+  .selection__fields--personal {
+    margin-bottom: 72px;
+  }
+
+  .selection__fields--program {
+    border: 1px solid #d9d9d9;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    margin-bottom: 65px;
+  }
+
+  .selection__fields--contacts {
+    margin-bottom: 65px;
+  }
+
+  .selection__fields--comment {
+    margin-bottom: 65px;
+  }
+
+  .selection__fields-text-area {
+    font-size: 20px;
+    line-height: 150%;
+    height: 175px;
+  }
+
+  .selection__fields--extra {
+    margin-bottom: 65px;
+  }
+
+  .selection__fields-list {
+    margin-left: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .selection__fields-list-item {
+    width: 250px;
+  }
+
+  .selection__fields-item-text {
+    font-size: 20px;
+  }
+
+  .selection__fields-button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .selection__fields-button {
+    width: 284px;
+    height: 54px;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+
+  .selection__fields-text-description {
+    font-size: 16px;
+    line-height: 100%;
+  }
 }
