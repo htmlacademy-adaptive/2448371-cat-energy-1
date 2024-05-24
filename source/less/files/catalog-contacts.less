@@ -74,17 +74,18 @@
 
 @media (min-width: @desktop-width) {
   .catalog-contacts__container {
-    position: absolute;
-    z-index: 1;
-    top: 95px;
-    left: 40px;
-    width: 570px;
-    background-color: @white;
-    padding: 0  80px;
+    position: relative;
+    margin: 0 auto;
   }
 
   .catalog-contacts__info {
-    padding: 60px 0;
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    width: 570px;
+    background-color: @white;
+    padding: 60px 80px;
+    box-sizing: border-box;
   }
 
   .catalog-contacts__info-text {
