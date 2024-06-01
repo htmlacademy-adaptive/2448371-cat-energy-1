@@ -4,9 +4,50 @@
 
 .promo__container {
   .container;
-  box-sizing: border-box;
 }
 
 .promo__wraper {
   text-align: center;
+  position: relative;
+}
+
+.promo-img--big {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wraper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo-img--small {
+    display: none;
+  }
+
+  .promo-img--big {
+    display: block;
+    order: 4;
+    z-index: -1;
+    margin-top: -85px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding-bottom: 82px;
+  }
+
+  .promo__wraper {
+    display: grid;
+    grid-template-columns: 437px 163px 610px;
+  }
+
+  .promo-img--big {
+    width: 552px;
+    height: 499px;
+    grid-column: 2/4;
+    margin: 0;
+    grid-row: 1 / 5;
+  }
 }

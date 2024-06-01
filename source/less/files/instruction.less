@@ -5,7 +5,6 @@
 
 .instruction__container {
   .container;
-  box-sizing: border-box;
 }
 
 .instruction__title {
@@ -14,7 +13,7 @@
   font-size: 36px;
   line-height: 111%;
   text-align: center;
-  color: #000000;
+  color: @black;
   white-space: nowrap;
 }
 
@@ -30,7 +29,18 @@
   align-items: center;
 }
 
+.instruction__illustration {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: @basic-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .instruction__item-text {
+  font-family: @second-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
@@ -44,4 +54,43 @@
   height: 60px;
   background-color: @basic-green;
   margin-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .instruction {
+    padding-bottom: 47px;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 153px;
+  }
+
+  .instruction__item {
+    width: 230px;
+  }
+
+  .instruction__item-text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction {
+    padding-bottom: 69px;
+  }
+
+  .instruction__list {
+    justify-content: space-between;
+    gap: 0;
+  }
 }

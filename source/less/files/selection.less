@@ -4,15 +4,13 @@
 
 .selection__container {
   .container;
-  box-sizing: border-box;
 }
 
 .selection__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
-  color: #000000;
-  margin-top: 27px;
+  color: @black;
   margin-bottom: 37px;
 }
 
@@ -21,7 +19,7 @@
   font-size: 14px;
   line-height: 129%;
   text-transform: uppercase;
-  color: #000000;
+  color: @black;
   margin-top: 0;
   margin-bottom: 39px;
 }
@@ -73,7 +71,7 @@
 }
 
 .selection__fields--personal {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .selection__fields--program {
@@ -81,6 +79,7 @@
   border-bottom: 1px solid #d9d9d9;
   padding-top: 22px;
   padding-bottom: 19px;
+  margin-bottom: 26px;
 }
 
 .selection__fields-list-item {
@@ -99,7 +98,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 108%;
-  color: #000000;
+  color: @black;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -117,8 +116,7 @@
 }
 
 .selection__fields--contacts {
-  padding-bottom: 24px;
-  padding-top: 26px;
+  margin-bottom: 24px;
 }
 
 .selection__fields-text-area {
@@ -134,7 +132,7 @@
 }
 
 .selection__fields--comment {
-  padding-bottom: 23px;
+  margin-bottom: 23px;
 }
 
 .selection__fields-item-text {
@@ -145,8 +143,15 @@
   color: @special-dark-grey;
 }
 
+.selection__fields--extra {
+  margin-bottom: 34px;
+}
+
+.selection__fields-button-wrapper {
+  margin-bottom: 32px;
+}
+
 .selection__fields-button {
-  margin-top: 34px;
   margin-bottom: 21px;
   padding: 6px 15px;
   width: 100%;
@@ -161,7 +166,8 @@
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white;
+  font-family: @main-family;
 }
 
 .selection__fields-text-description {
@@ -170,6 +176,213 @@
   font-size: 14px;
   line-height: 114%;
   text-align: center;
-  color: #000000;
+  color: @black;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .selection__title {
+    margin: 0;
+    margin-bottom: 54px;
+    font-size: 60px;
+    margin-left: 40px;
+  }
+
+  .selection__description {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: 40px;
+  }
+
+  .selection__form {
+    margin: 0 40px;
+  }
+
+  .selection__fields {
+    gap: 20px;
+  }
+
+  .selection__fields-title {
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 76px;
+  }
+
+  .selection__fields-text {
+    font-size: 20px;
+  }
+
+  .selection__fields-input-text {
+    font-size: 20px;
+  }
+
+  .selection__fields--personal {
+    margin-bottom: 72px;
+  }
+
+  .selection__fields--program {
+    border: 1px solid #d9d9d9;
+    padding-top: 23px;
+    padding-bottom: 27px;
+    margin-bottom: 65px;
+  }
+
+  .selection__fields--contacts {
+    margin-bottom: 65px;
+  }
+
+  .selection__fields--comment {
+    margin-bottom: 65px;
+  }
+
+  .selection__fields--comment .selection__fields-title {
+    margin-bottom: 87px;
+  }
+
+  .selection__fields-text-area {
+    font-size: 20px;
+    line-height: 150%;
+    height: 175px;
+  }
+
+  .selection__fields--extra {
+    margin-bottom: 65px;
+  }
+
+  .selection__fields-list {
+    margin-left: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .selection__fields--program .selection__fields-list {
+    flex-direction: column;
+  }
+
+  .selection__fields-list-item {
+    width: 250px;
+  }
+
+  .selection__fields-item-text {
+    font-size: 20px;
+  }
+
+  .selection__fields-button-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .selection__fields-button {
+    width: 284px;
+    height: 54px;
+    margin-right: 60px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .selection__fields-text-description {
+    font-size: 16px;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .selection__title {
+    margin-bottom: 55px;
+    margin-left: 0;
+  }
+
+  .selection__description {
+    margin-bottom: 66px;
+    margin-left: 0;
+  }
+
+  .selection__form {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 70px;
+  }
+
+  .selection__fields--personal {
+    margin-bottom: 0;
+    width: 570px;
+  }
+
+  .selection__fields--program {
+    border: 1px solid #d9d9d9;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    width: 568px;
+  }
+
+  .selection__fields-input-text {
+    height: 52px;
+  }
+
+  .selection__fields-list {
+    flex-direction: column;
+    gap: 13px;
+    margin-left: 28px;
+  }
+
+  .selection__fields-list-item {
+    width: 100%;
+  }
+
+  .selection__fields--contacts {
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .selection__fields-title {
+    width: 100%;
+  }
+
+  .selection__fields--contacts .selection__fields-title {
+    margin-bottom: 76px;
+  }
+
+  .selection__fields-block {
+    width: 570px;
+  }
+
+  .selection__fields--comment {
+    margin-bottom: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .selection__fields--comment .selection__fields-title {
+    margin-bottom: 78px;
+  }
+
+  .selection__fields-text-area {
+    width: 100%;
+  }
+
+  .selection__fields--extra {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .selection__fields--extra .selection__fields-title {
+    margin-bottom: 57px;
+  }
+
+  .selection__fields-list--extra {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  .selection__fields-button {
+    width: 570px;
+  }
 }

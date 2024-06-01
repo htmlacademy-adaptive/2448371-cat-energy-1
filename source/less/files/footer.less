@@ -6,7 +6,6 @@
 
 .footer__container {
   .container;
-  box-sizing: border-box;
 }
 
 .footer__logo {
@@ -56,4 +55,38 @@
 
 .footer__developer-link-text {
   margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+}
+
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding-top: 61.5px;
+    padding-bottom: 61.5px;
+  }
+
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__social {
+    border: none;
+    padding: 0 5px;
+  }
+
+  .footer__developer-link {
+    margin: 0;
+  }
+
+  .footer__developer-link-text {
+    margin-right: 23px;
+  }
 }
