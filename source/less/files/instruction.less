@@ -12,7 +12,8 @@
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 111%;
-  text-align: center;
+  text-align: left;
+  font-weight: 400;
   color: @black;
   white-space: nowrap;
 }
@@ -71,16 +72,48 @@
   .instruction__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 37px 153px;
+    gap: 37px;
+    justify-content: space-between;
+    counter-reset: number 0;
   }
 
   .instruction__item {
     width: 230px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-bottom: 55px;
+    position: relative;
+    counter-increment: number 1;
+    margin-bottom: 0;
+  }
+
+  .instruction__item::after {
+    content: counter(number);
+    position: absolute;
+    font-family: @main-family;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 100%;
+    text-align: center;
+    color: @basic-grey;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+  }
+
+  .instruction__illustration {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
   }
 
   .instruction__item-text {
+    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
+    width: auto;
+    color: @special-dark-grey;
   }
 }
 

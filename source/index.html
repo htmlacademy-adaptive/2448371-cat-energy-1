@@ -56,7 +56,7 @@
         </a>
         <button class="header__menu" type="button">
           <svg class="header__menu-toggle header__menu-toggle--open" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(.68659 -.72705 .68659 .72705 2 20)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/><path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/></svg>
-          <!-- <svg class="header__menu-toggle header__menu-toggle--close"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24"/></svg> -->
+          <svg class="header__menu-toggle header__menu-toggle--close"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24"/></svg>
         </button>
       </div>
       <nav class="header__navigation">
@@ -125,9 +125,7 @@
               <div class="instruction__illustration">
                 <img src="./img/instruction-item-2.svg" alt="">
               </div>
-              <p class="instruction__item-text">Выпускается в виде порошка,
-                который нужно лишь залить
-                кипятком и готово.</p>
+              <p class="instruction__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="instruction__item instruction__item--3">
               <div class="instruction__illustration">
@@ -161,11 +159,11 @@
                 <p class="example__result-text">затрачено времени</p>
               </div>
             </div>
-            <p class="example__price">Затраты на питание: 15 000 РУБ. </p>
+            <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span> </p>
           </div>
           <div class="example__slider">
             <div class="example__slider-image-wrapper">
-              <img src="./img/mobile-slider-before.png" alt="Толстый кот">
+              <img class="example__slider-image" src="./img/tablet-slider-before.png" alt="Толстый кот">
             </div>
             <div class="example__slider-image-wrapper"></div>
           </div>
@@ -176,7 +174,10 @@
       <div class="contacts__container">
         <div class="contacts__info">
           <h3 class="contacts__info-title">приглашаем <br>к сотрудничеству <br> дилеров!</h3>
-          <p class="contacts__info-text">ул. Большая<br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+          <div class="contacts__info-adress">
+            <p class="contacts__info-adress-street">ул. Большая<br> Конюшенная, д. 19/8
+            <p class="contacts__info-adress-city"> Санкт-Петербург</p>
+          </div>
         </div>
       </div>
     </section>

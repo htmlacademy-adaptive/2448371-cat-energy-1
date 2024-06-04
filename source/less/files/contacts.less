@@ -13,14 +13,60 @@
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   text-transform: uppercase;
   color: @black-2;
   padding: 0 5px;
   box-sizing: border-box;
 }
 
-.contacts__info-text {
+.contacts__info-adress {
   margin: 0;
   font-family: @second-family;
+}
+
+.contacts__info-adress-street,
+.contacts__info-adress-city {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: right;
+}
+
+.contacts__info-adress-street {
+  margin-bottom: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__info {
+    padding: 61px 40px;
+  }
+
+  .contacts__info-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__container {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .contacts__info {
+    position: absolute;
+    z-index: 1;
+    top: 95px;
+    width: 570px;
+    background-color: @white;
+    padding: 60px 80px;
+    box-sizing: border-box;
+  }
+
+  .contacts__info-text {
+    text-align: left;
+  }
 }

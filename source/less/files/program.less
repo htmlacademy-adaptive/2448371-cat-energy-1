@@ -121,6 +121,7 @@
     line-height: 150%;
     color: @black;
     margin-bottom: 48px;
+    border-bottom: none;
   }
 
   .program__link-item {
@@ -140,6 +141,55 @@
 
   .program__list-item {
     width: 570px;
+    padding: 41px 61px 55px 52px;
+  }
+
+  .program__list-item::before {
+    content: "";
+    display: flex;
+    position: absolute;
+    background-image: url("/img/Ellipse-green.svg");
+    background-size: 100px 106px;
+    width: 100px;
+    height: 106px;
+    z-index: 1;
+    top: 24px;
+  }
+
+  .program__list-item--slim::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background-image: url("/img/program-slim.svg");
+    background-size: 70px 97px;
+    width: 70px;
+    height: 97px;
+    z-index: 1;
+    top: 24px;
+    left: 70px;
+  }
+
+  .program__list-item--pro::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background-image: url("/img/program-pro.svg");
+    background-size: 134px 56px;
+    width: 134px;
+    height: 100px;
+    z-index: 1;
+    left: 37px;
+  }
+
+  .program__title {
+    text-align: center;
+    margin-bottom: 73px;
+    padding-top: 18px;
+  }
+
+  .program__text {
+    margin-bottom: 23px;
+    padding: 0;
   }
 
   .program__list-item:nth-child(1) {

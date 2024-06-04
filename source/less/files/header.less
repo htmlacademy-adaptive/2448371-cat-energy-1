@@ -1,5 +1,6 @@
 .header {
   margin-bottom: 27px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .header__container {
@@ -10,7 +11,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
+  padding: 13px 0;
+}
+
+.header__logo {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .header__logo--tablet {
@@ -27,6 +38,10 @@
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+.header__menu-toggle--close {
+  display: none;
 }
 
 .header__navigation-list {
@@ -53,6 +68,7 @@
 @media (min-width: @tablet-width) {
   .header {
     margin-bottom: 65px;
+    border-bottom: none;
   }
 
   .header__container {
