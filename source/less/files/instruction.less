@@ -28,9 +28,12 @@
   display: flex;
   margin-bottom: 20px;
   align-items: center;
+  position: relative;
 }
 
-.instruction__illustration {
+.instruction__item::before {
+  content: "";
+  position: relative;
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -49,6 +52,51 @@
   width: 200px;
   box-sizing: border-box;
 }
+
+.instruction__item--1 .instruction__item-text::before {
+  content: "";
+  background-image: url("/img/instruction-item-1.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+
+.instruction__item--2 .instruction__item-text::before {
+  content: "";
+  background-image: url("/img/instruction-item-2.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+
+.instruction__item--3 .instruction__item-text::before {
+  content: "";
+  background-image: url("/img/instruction-item-3.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 18px;
+  top: 18px;
+}
+
+.instruction__item--4 .instruction__item-text::before {
+  content: "";
+  background-image: url("/img/instruction-item-4.svg");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  left: 18px;
+  top: 16px;
+}
+
 
 .instruction__item-box {
   width: 60px;
@@ -83,9 +131,34 @@
     align-items: flex-start;
     padding-top: 40px;
     padding-bottom: 55px;
-    position: relative;
     counter-increment: number 1;
     margin-bottom: 0;
+  }
+
+  .instruction__item::before {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+  }
+
+  .instruction__item--1 .instruction__item-text::before {
+    left: 27px;
+    top: 66px;
+  }
+
+  .instruction__item--2 .instruction__item-text::before {
+    left: 27px;
+    top: 66px;
+  }
+
+  .instruction__item--3 .instruction__item-text::before {
+    left: 27px;
+    top: 66px;
+  }
+
+  .instruction__item--4 .instruction__item-text::before {
+    left: 27px;
+    top: 66px;
   }
 
   .instruction__item::after {
@@ -120,6 +193,16 @@
 @media (min-width: @desktop-width) {
   .instruction {
     padding-bottom: 69px;
+  }
+
+  .instruction__item {
+    height: 280px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .instruction__item::before {
+    margin-bottom: 31px;
   }
 
   .instruction__list {

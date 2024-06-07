@@ -114,6 +114,7 @@
     font-size: 36px;
     line-height: 100%;
     margin-bottom: 24px;
+    margin-left: 0;
   }
 
   .program__text {
@@ -122,9 +123,46 @@
     color: @black;
     margin-bottom: 48px;
     border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .program__list-item {
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-right: 350px;
+    padding-bottom: 53px;
+  }
+
+  .program__list-item::before {
+    background-size: 200px 211px;
+    width: 200px;
+    height: 211px;
+    top: 81px;
+    right: 63px;
+  }
+
+  .program__list-item--slim::after {
+    background-size: 140px 194px;
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    right: 93px;
+  }
+
+  .program__list-item--pro::after {
+    background-size: 268px 112px;
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: auto;
+    right: 29px;
   }
 
   .program__link-item {
+    padding: 4px 0;
+  }
+
+  .program__link-item-title {
     font-size: 20px;
   }
 }
@@ -141,50 +179,38 @@
 
   .program__list-item {
     width: 570px;
-    padding: 41px 61px 55px 52px;
+    padding: 77px 61px 55px 52px;
   }
 
   .program__list-item::before {
-    content: "";
-    display: flex;
-    position: absolute;
-    background-image: url("/img/Ellipse-green.svg");
     background-size: 100px 106px;
     width: 100px;
     height: 106px;
-    z-index: 1;
-    top: 24px;
+    top: 47px;
+    right: auto;
   }
 
   .program__list-item--slim::after {
-    content: "";
-    display: flex;
-    position: absolute;
-    background-image: url("/img/program-slim.svg");
     background-size: 70px 97px;
     width: 70px;
     height: 97px;
-    z-index: 1;
-    top: 24px;
+    top: 47px;
     left: 70px;
   }
 
   .program__list-item--pro::after {
-    content: "";
-    display: flex;
-    position: absolute;
-    background-image: url("/img/program-pro.svg");
     background-size: 134px 56px;
     width: 134px;
     height: 100px;
-    z-index: 1;
-    left: 37px;
+    left: 33px;
+    right: auto;
+    top: 47px;
   }
 
   .program__title {
     text-align: center;
     margin-bottom: 73px;
-    padding-top: 18px;
+    margin-left: 214px;
   }
 
   .program__text {

@@ -3,17 +3,6 @@
   position: relative;
 }
 
-.catalog-additional__container::before {
-  content: "";
-  z-index: -1;
-  width: 100%;
-  height: 3px;
-  position: absolute;
-  top: 12px;
-  right: -20px;
-  background-color: #68b738;
-}
-
 .catalog-additional__title {
   margin: 0;
   margin-bottom: 36px;
@@ -22,6 +11,17 @@
   font-weight: 400;
   background-color: @white;
   width: 250px;
+}
+
+.catalog-additional__title::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 12px;
+  right: -20px;
+  background-color: #68b738;
 }
 
 .catalog-additional__list {
