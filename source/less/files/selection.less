@@ -1,5 +1,6 @@
 .selection {
   padding-bottom: 32px;
+  overflow: hidden;
 }
 
 .selection__container {
@@ -102,6 +103,8 @@
   margin: 0;
   margin-bottom: 20px;
   background-color: @white;
+  display: inline-block;
+  padding-right: 20px;
 }
 
 .selection__fields-block {
@@ -128,12 +131,18 @@
 .selection__fields--contacts::before {
   content: "";
   z-index: -1;
-  width: 100%;
+  width: 300%;
   height: 3px;
   position: absolute;
   top: 15px;
-  right: -20px;
+  left: 0;
   background-color: #68b738;
+}
+
+.selection__fields-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .selection__fields-text-area {
@@ -160,11 +169,11 @@
 .selection__fields--comment::before {
   content: "";
   z-index: -1;
-  width: 100%;
+  width: 300%;
   height: 3px;
   position: absolute;
   top: 15px;
-  right: -20px;
+  left: 0;
   background-color: #68b738;
 }
 
@@ -188,11 +197,11 @@
 .selection__fields--extra::before {
   content: "";
   z-index: -1;
-  width: 100%;
+  width: 300%;
   height: 3px;
   position: absolute;
   top: 15px;
-  right: -20px;
+  left: 0;
   background-color: #68b738;
 }
 
@@ -244,7 +253,9 @@
     margin: 0 40px;
   }
 
-  .selection__fields {
+  .selection__fields-block-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -252,6 +263,8 @@
     font-size: 36px;
     line-height: 100%;
     margin-bottom: 76px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
 
   .selection__fields-text {
@@ -284,9 +297,9 @@
   .selection__fields--contacts::before,
   .selection__fields--comment::before,
   .selection__fields--extra::before {
-    width: 200%;
+    width: 300%;
     top: 20px;
-    right: -70px;
+    left: -100%;
   }
 
   .selection__fields--comment {
@@ -375,6 +388,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 80px 70px;
+  }
+
+  .selection__fields-block-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
   }
 
   .selection__fields--personal {
