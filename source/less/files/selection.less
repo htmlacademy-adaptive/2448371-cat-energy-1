@@ -76,11 +76,30 @@
 }
 
 .selection__fields--program {
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
   padding-top: 22px;
   padding-bottom: 19px;
   margin-bottom: 26px;
+  position: relative;
+}
+
+.selection__fields--program::after {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 1px;
+  background-color: @basic-grey-2;
+  bottom: 0;
+  left: -100%;
+}
+
+.selection__fields--program::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 1px;
+  background-color: @basic-grey-2;
+  top: 0;
+  left: -100%;
 }
 
 .selection__fields-list-item {
@@ -286,6 +305,11 @@
     margin-bottom: 65px;
   }
 
+  .selection__fields--program::after,
+  .selection__fields--program::before {
+    display: none;
+  }
+
   .selection__fields--contacts {
     margin-bottom: 65px;
   }
@@ -402,7 +426,6 @@
   }
 
   .selection__fields--program {
-    border: 1px solid #d9d9d9;
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 0;
