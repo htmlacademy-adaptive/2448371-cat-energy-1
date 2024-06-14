@@ -6,7 +6,7 @@
 .promo::before {
   content: "";
   position: absolute;
-  background-image: url("/img/index-promo-cat-mobile.png");
+  background-image: url("../img/index-promo-cat-mobile.png");
   top: 0;
   width: 100%;
   height: 302px;
@@ -67,18 +67,22 @@
 @media (min-width: @desktop-width) {
   .promo {
     padding-bottom: 82px;
+    position: static;
   }
 
   .promo::before {
     content: "";
     position: absolute;
     display: block;
-    background-image: url("/img/index-promo-cat-desktope.png");
-    top: -188px;
+    background-image: url("../img/index-promo-cat-desktope.png");
+    top: 0;
+    background-position: center;
     right: 0;
-    width: 720px;
+    width: 50%;
+    background-repeat: no-repeat;
     height: 694px;
     z-index: -2;
+    background-size: cover;
   }
 
   .promo::after {
@@ -87,10 +91,10 @@
     display: block;
     background-color: @basic-green;
     opacity: 0.8;
-    top: -188px;
+    top: 0;
     right: 0;
     z-index: -2;
-    width: 720px;
+    width: 50%;
     height: 694px;
   }
 

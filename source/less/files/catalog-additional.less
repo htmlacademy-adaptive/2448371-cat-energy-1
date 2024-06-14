@@ -14,7 +14,6 @@
   line-height: 100%;
   font-weight: 400;
   background-color: @white;
-  width: 250px;
 }
 
 .catalog-additional__title::before {
@@ -38,7 +37,7 @@
 .catalog-additional__gift {
   width: 280px;
   height: 290px;
-  background-image: url("/img/gift-img.png");
+  background-image: url("../img/gift-img.png");
   background-size: cover;
   text-decoration: none;
   color: @white;
@@ -85,7 +84,6 @@
 
   .catalog-additional__list {
     margin-bottom: 70px;
-    border-top: 1px solid @special-grey;
     border-left: 1px solid @special-grey;
     border-right: 1px solid @special-grey;
   }
@@ -99,8 +97,9 @@
   .catalog-additional__title {
     font-size: 36px;
     margin-bottom: 80px;
-    width: 380px;
     padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
   }
 
 
@@ -123,14 +122,14 @@
     padding-bottom: 87px;
   }
 
+  .catalog-additional__title {
+    margin-left: -40px;
+  }
+
   .catalog-additional__container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
-  }
-
-  .catalog-additional__title {
-    width: 400px;
   }
 
   .catalog-additional__list {

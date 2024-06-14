@@ -5,7 +5,6 @@ let headerButton = document.querySelector('.header__button');
 
 header.classList.remove('header--nojs');
 headerNavigation.classList.add('header__navigation--closed')
-headerNavigation.classList.remove('header__navigation--open')
 headerButton.classList.add('header__button--open');
 
 headerButton.addEventListener('click', function() {
@@ -13,9 +12,13 @@ headerButton.addEventListener('click', function() {
   {
     headerButton.classList.remove('header__button--open')
     headerButton.classList.add('header__button--closed')
-  } else (headerNavigation.classList.contains('header__navigation--open'))
+    headerNavigation.classList.add('header__navigation--open')
+    headerNavigation.classList.remove('header__navigation--closed')
+  } else
   {
     headerButton.classList.remove('header__button--closed');
     headerButton.classList.add('header__button--open');
+    headerNavigation.classList.remove('header__navigation--open')
+    headerNavigation.classList.add('header__navigation--closed')
   }
 });
