@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Cat Energy Form</title>
 </head>
 <body>
@@ -57,7 +58,7 @@
         <button class="header__button" type="button">
         </button>
       </div>
-      <nav class="header__navigation header__navigation--open">
+      <nav class="header__navigation">
         <ul class="header__navigation-list">
           <li class="header__navigation-list-item"><a class="header__navigation-list-link"><a class="header__navigation-list-link" href="index.html">главная</a></li>
           <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="catalog.html">каталог продукции</a></li>
@@ -93,19 +94,19 @@
               <li class="selection__fields-list-item">
                 <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="weight-loss" name="program" checked>
-                  <span class="selection__fields-item-text">похудение</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--radio">похудение</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="weight-gain" name="program">
-                  <span class="selection__fields-item-text">Набор массы</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--radio">Набор массы</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="Need-advice" name="program">
-                  <span class="selection__fields-item-text">Не знаю (Нужен ваш совет)</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--radio">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -139,25 +140,25 @@
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="sugar">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="sugar">
-                  <span class="selection__fields-item-text">сахарозаменитель</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">сахарозаменитель</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="water">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="water">
-                  <span class="selection__fields-item-text">питьевая вода</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">питьевая вода</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="milk">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="milk">
-                  <span class="selection__fields-item-text">молоко</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">молоко</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="vitamins">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="vitamins">
-                  <span class="selection__fields-item-text">витамины</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">витамины</span>
                 </label>
               </li>
             </ul>
@@ -256,5 +257,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>

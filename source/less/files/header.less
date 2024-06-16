@@ -6,8 +6,18 @@
   visibility: hidden;
 }
 
+.header__navigation {
+  position: relative;
+}
+
 .header__navigation--open {
   display: block;
+  position: absolute;
+  background-color: #ffffff;
+  top: 67px;
+  left: 0;
+  .container;
+  z-index: 10;
 }
 
 .header__navigation--closed {
@@ -15,7 +25,6 @@
 }
 
 .header {
-  border-bottom: 1px solid #d9d9d9;
   overflow: hidden;
 }
 
@@ -87,6 +96,14 @@
   padding-bottom: 22px;
   text-align: center;
   position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .header__navigation-list-item::before {
@@ -172,6 +189,10 @@
 
   .header__navigation-list-item:nth-child(1)::after {
     display: none;
+  }
+
+  .header__navigation--closed {
+    display: block;
   }
 
   .header__navigation-list-current {

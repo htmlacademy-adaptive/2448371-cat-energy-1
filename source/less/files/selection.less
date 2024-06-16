@@ -69,6 +69,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .selection__fields--personal {
@@ -107,7 +110,6 @@
   font-size: 16px;
   line-height: 112%;
   text-transform: uppercase;
-  margin-bottom: 13px;
 }
 
 .selection__fields-list-item:nth-last-child(1) {
@@ -202,6 +204,75 @@
   line-height: 112%;
   text-transform: uppercase;
   color: @special-dark-grey;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.selection__fields-item-input {
+  display: none;
+}
+
+.selection__fields-list-wraper {
+  display: flex;
+}
+
+.selection__fields-item-text--radio::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid @special-grey;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.selection__fields-item-text--radio::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: @basic-green;
+  top: 50%;
+  left: -6px;
+  transform: translate(66%, -50%);
+  opacity: 0;
+}
+
+.selection__fields-item-input:checked + .selection__fields-item-text--radio::after {
+  opacity: 1;
+}
+
+.selection__fields-item-text--checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid @special-grey;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.selection__fields-item-text--checkbox::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/check-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+  top: 15px;
+  left: -15px;
+  transform: translate(66%, -50%);
+  opacity: 0;
+}
+
+.selection__fields-item-input:checked + .selection__fields-item-text--checkbox::after {
+  opacity: 1;
 }
 
 .selection__fields--extra {
@@ -272,6 +343,10 @@
     margin: 0 40px;
   }
 
+  .selection__fields {
+    gap: 20px;
+  }
+
   .selection__fields-block-wrapper {
     display: flex;
     flex-direction: column;
@@ -292,6 +367,29 @@
 
   .selection__fields-input-text {
     font-size: 20px;
+  }
+
+  .selection__fields-item-text--radio::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .selection__fields-item-text--radio::after {
+    top: 50%;
+    left: 0;
+  }
+
+  .selection__fields-item-text--checkbox::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .selection__fields-item-text--checkbox::after {
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/check.svg");
+    top: 20px;
+    left: -8px;
   }
 
   .selection__fields--personal {

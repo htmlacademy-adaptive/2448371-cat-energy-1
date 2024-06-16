@@ -4,8 +4,9 @@ let headerButton = document.querySelector('.header__button');
 
 
 header.classList.remove('header--nojs');
-headerNavigation.classList.add('header__navigation--closed')
+headerNavigation.classList.add('header__navigation--closed');
 headerButton.classList.add('header__button--open');
+
 
 headerButton.addEventListener('click', function() {
   if (headerNavigation.classList.contains('header__navigation--closed'))
