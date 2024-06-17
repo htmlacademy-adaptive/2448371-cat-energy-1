@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Cat Energy Form</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header header--nojs">
     <div class="header__container">
       <div class="header__top">
         <a class="header__link" href="#">
@@ -54,16 +55,14 @@
             </defs>
           </svg>
         </a>
-        <button class="header__menu" type="button">
-          <svg class="header__menu-toggle header__menu-toggle--open" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(.68659 -.72705 .68659 .72705 2 20)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/><path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/></svg>
-          <!-- <svg class="header__menu-toggle header__menu-toggle--close"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24"/></svg> -->
+        <button class="header__button" type="button">
         </button>
       </div>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
-          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="index.html">главная</a></li>
+          <li class="header__navigation-list-item"><a class="header__navigation-list-link"><a class="header__navigation-list-link" href="index.html">главная</a></li>
           <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="catalog.html">каталог продукции</a></li>
-          <li class="header__navigation-list-item"><a class="header__navigation-list-link header__navigation-list-current" href="form.html">подбор программы</a></li>
+          <li class="header__navigation-list-item header__navigation-list-current"><a class="header__navigation-list-link" href="form.html">подбор программы</a></li>
         </ul>
       </nav>
     </div>
@@ -95,39 +94,41 @@
               <li class="selection__fields-list-item">
                 <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="weight-loss" name="program" checked>
-                  <span class="selection__fields-item-text">похудение</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--radio">похудение</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="weight-gain" name="program">
-                  <span class="selection__fields-item-text">Набор массы</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--radio">Набор массы</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-list-wraper">
                   <input class="selection__fields-item-input" type="radio" value="Need-advice" name="program">
-                  <span class="selection__fields-item-text">Не знаю (Нужен ваш совет)</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--radio">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="selection__fields selection__fields--contacts">
             <h2 class="selection__fields-title">Контактные данные (владельца кота)</h2>
-            <label class="selection__fields-block" for="e-mail">
-              <span class="selection__fields-text">E-mail:*</span>
-              <input class="selection__fields-input-text" type="email" required placeholder="kuklachev@gmail.com">
-              <svg class="selection__fields-icon selection__fields-icon--email" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </label>
-            <label class="selection__fields-block" for="phone">
-              <span class="selection__fields-text">Телефон:*</span>
-              <input class="selection__fields-input-text" type="tel" placeholder="8 (960) 900-60-90">
-              <svg class="selection__fields-icon selection__fields-icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </label>
+            <div class="selection__fields-block-wrapper">
+              <label class="selection__fields-block" for="e-mail">
+                <span class="selection__fields-text">E-mail:*</span>
+                <input class="selection__fields-input-text" type="email" required placeholder="kuklachev@gmail.com">
+                <svg class="selection__fields-icon selection__fields-icon--email" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </label>
+              <label class="selection__fields-block" for="phone">
+                <span class="selection__fields-text">Телефон:*</span>
+                <input class="selection__fields-input-text" type="tel" placeholder="8 (960) 900-60-90">
+                <svg class="selection__fields-icon selection__fields-icon--phone" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="selection__fields selection__fields--comment">
             <h2 class="selection__fields-title" >Комментарий</h2>
@@ -139,25 +140,25 @@
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="sugar">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="sugar">
-                  <span class="selection__fields-item-text">сахарозаменитель</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">сахарозаменитель</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="water">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="water">
-                  <span class="selection__fields-item-text">питьевая вода</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">питьевая вода</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="milk">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="milk">
-                  <span class="selection__fields-item-text">молоко</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">молоко</span>
                 </label>
               </li>
               <li class="selection__fields-list-item">
                 <label class="selection__fields-item-wrapper" for="vitamins">
                   <input class="selection__fields-item-input" type="checkbox" name="" id="vitamins">
-                  <span class="selection__fields-item-text">витамины</span>
+                  <span class="selection__fields-item-text selection__fields-item-text--checkbox">витамины</span>
                 </label>
               </li>
             </ul>
@@ -173,7 +174,10 @@
       <div class="catalog-contacts__container">
         <div class="catalog-contacts__info">
           <h3 class="catalog-contacts__info-title">приглашаем <br>к сотрудничеству <br> дилеров!</h3>
-          <p class="catalog-contacts__info-text">ул. Большая<br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+          <div class="catalog-contacts__info-adress">
+            <p class="catalog-contacts__info-street">ул. Большая<br> Конюшенная, д. 19/8</p>
+            <p class="catalog-contacts__info-city">Санкт-Петербург</p>
+          </div>
         </div>
       </div>
     </section>
@@ -253,5 +257,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>

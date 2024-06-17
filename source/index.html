@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Cat Energy</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header header--nojs">
     <div class="header__container">
       <div class="header__top">
         <a class="header__link" href="#">
@@ -54,13 +55,11 @@
             </defs>
           </svg>
         </a>
-        <button class="header__menu" type="button">
-          <svg class="header__menu-toggle header__menu-toggle--open" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(.68659 -.72705 .68659 .72705 2 20)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/><path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/></svg>
-          <!-- <svg class="header__menu-toggle header__menu-toggle--close"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24"/></svg> -->
+        <button class="header__button" type="button">
         </button>
       </div>
       <nav class="header__navigation">
-        <ul class="header__navigation-list">
+        <ul class="header__navigation-list header__navagation-index">
           <li class="header__navigation-list-item header__navigation-list-current"><a class="header__navigation-list-link"><a class="header__navigation-list-link" href="index.html">главная</a></li>
           <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="catalog.html">каталог продукции</a></li>
           <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="form.html">подбор программы</a></li>
@@ -75,7 +74,7 @@
             <h2 class="main__title">Функциональное
               питание для котов</h2>
             <p class="main__tagline">Занялся собой? Займись котом!</p>
-            <img class="promo-img--small" src="./img/index_promo-img.jpg" width="280" height="270" alt="Питание для кошек">
+            <img class="promo-img--small" src="./img/index_promo-img.png" width="280" height="270" alt="Питание для кошек">
             <img class="promo-img--big" src="./img/promo-index-tablet.png" alt="Питание для кошек">
             <a class="main__button button " href="form.html">
               <span class="main__button-text">подобрать программу</span></a>
@@ -114,33 +113,19 @@
           <h2 class="instruction__title">Как это работает</h2>
           <ul class="instruction__list">
             <li class="instruction__item instruction__item--1">
-              <div class="instruction__illustration">
-                <img src="./img/instruction-item-1.svg" alt="">
-              </div>
               <p class="instruction__item-text">Функциональное питание
                 содержит только полезные
                 питательные вещества.</p>
             </li>
             <li class="instruction__item instruction__item--2">
-              <div class="instruction__illustration">
-                <img src="./img/instruction-item-2.svg" alt="">
-              </div>
-              <p class="instruction__item-text">Выпускается в виде порошка,
-                который нужно лишь залить
-                кипятком и готово.</p>
+              <p class="instruction__item-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="instruction__item instruction__item--3">
-              <div class="instruction__illustration">
-                <img src="./img/instruction-item-3.svg" alt="">
-              </div>
               <p class="instruction__item-text">Замените один-два приема
                 обычной еды на наше
                 функциональное питание.</p>
             </li>
             <li class="instruction__item instruction__item--4">
-              <div class="instruction__illustration">
-                <img src="./img/instruction-item-4.svg" alt="">
-              </div>
               <p class="instruction__item-text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
@@ -161,22 +146,24 @@
                 <p class="example__result-text">затрачено времени</p>
               </div>
             </div>
-            <p class="example__price">Затраты на питание: 15 000 РУБ. </p>
+            <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span> </p>
           </div>
           <div class="example__slider">
             <div class="example__slider-image-wrapper">
-              <img src="./img/mobile-slider-before.png" alt="Толстый кот">
+              <img class="example__slider-image" src="./img/tablet-slider-before.png" alt="Толстый кот">
             </div>
             <div class="example__slider-image-wrapper"></div>
           </div>
         </div>
-        <div class="example__container-inner"></div>
       </section>
     <section class="contacts">
       <div class="contacts__container">
         <div class="contacts__info">
           <h3 class="contacts__info-title">приглашаем <br>к сотрудничеству <br> дилеров!</h3>
-          <p class="contacts__info-text">ул. Большая<br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
+          <div class="contacts__info-adress">
+            <p class="contacts__info-adress-street">ул. Большая<br> Конюшенная, д. 19/8
+            <p class="contacts__info-adress-city"> Санкт-Петербург</p>
+          </div>
         </div>
       </div>
     </section>
@@ -256,5 +243,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>

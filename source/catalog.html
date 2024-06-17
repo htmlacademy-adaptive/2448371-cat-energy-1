@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Cat Energy Catalog</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header header--nojs">
     <div class="header__container">
       <div class="header__top">
         <a class="header__link" href="#">
@@ -54,16 +55,20 @@
             </defs>
           </svg>
         </a>
-        <button class="header__menu" type="button">
-          <svg class="header__menu-toggle header__menu-toggle--open" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path transform="matrix(.68659 -.72705 .68659 .72705 2 20)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/><path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5" d="M0-.75h24.76"/></svg>
-          <!-- <svg class="header__menu-toggle header__menu-toggle--close"  width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 3h24M0 11h24M0 19h24"/></svg> -->
+        <button class="header__button" type="button">
         </button>
       </div>
       <nav class="header__navigation">
         <ul class="header__navigation-list">
-          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="index.html">главная</a></li>
-          <li class="header__navigation-list-item header__navigation-list-current"><a class="header__navigation-list-link" href="catalog.html">каталог продукции</a></li>
-          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="form.html">подбор программы</a></li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-link"><a class="header__navigation-list-link" href="index.html">главная</a>
+          </li>
+          <li class="header__navigation-list-item header__navigation-list-current">
+            <a class="header__navigation-list-link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-link" href="form.html">подбор программы</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -77,7 +82,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/chiken-small.png" alt="Курица 500гр" width="68px" height="86px">
+                  <img class="product__img product__img--small" src="img/chiken-small.png" alt="Курица 500гр" width="68px" height="86px">
                 </a>
               </div>
               <div class="product__description">
@@ -108,7 +113,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/chiken-big.png" alt="Курица 1000гр" width="84px" height="100px">
+                  <img class="product__img product__img--big" src="img/chiken-big.png" alt="Курица 1000гр" width="84px" height="100px">
                 </a>
               </div>
               <div class="product__description">
@@ -139,7 +144,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/fish-small.png" alt="Рыба 500гр" width="68px" height="86px">
+                  <img class="product__img product__img--small" src="img/fish-small.png" alt="Рыба 500гр" width="68px" height="86px">
                 </a>
               </div>
               <div class="product__description">
@@ -170,7 +175,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/fish-big.png" alt="Рыба 1000гр" width="84px" height="100px">
+                  <img class="product__img product__img--big" src="img/fish-big.png" alt="Рыба 1000гр" width="84px" height="100px">
                 </a>
               </div>
               <div class="product__description">
@@ -201,7 +206,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/buckwheat-small.png" alt="Гречка 500гр" width="68px" height="86px">
+                  <img class="product__img product__img--small" src="img/buckwheat-small.png" alt="Гречка 500гр" width="68px" height="86px">
                 </a>
               </div>
               <div class="product__description">
@@ -232,7 +237,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/buckwheat-big.png" alt="Гречка 1000гр" width="84px" height="100px">
+                  <img class="product__img product__img--big" src="img/buckwheat-big.png" alt="Гречка 1000гр" width="84px" height="100px">
                 </a>
               </div>
               <div class="product__description">
@@ -263,7 +268,7 @@
             <div class="product__wrapper">
               <div class="product__img-wraper">
                 <a class="product__link" href="#">
-                  <img class="product__img" src="img/rice-small.png" alt="Рис 500гр" width="68px" height="86px">
+                  <img class="product__img product__img--small" src="img/rice-small.png" alt="Рис 500гр" width="68px" height="86px">
                 </a>
               </div>
               <div class="product__description">
@@ -290,7 +295,7 @@
             </div>
             <a class="product__button" href="#">заказать</a>
           </li>
-          <li class="catalog__list-item product product--more">
+          <li class="catalog__list-item product--more">
             <div class="product__wrapper-more">
               <svg class="product__more-add" width="30" height="30" viewBox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <line x1="15" x2="15" y2="30" stroke="currentColor" stroke-width="2"/>
@@ -361,17 +366,15 @@
           </li>
         </ul>
         <div class="catalog-additional__gift">
-          <a class="catalog-additional__gift-img" href="#">
-            <svg class="catalog-additional__gift-svg" width="78" height="81" viewBox="0 0 78 81" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M64.0156 35.6325H14.031C12.2766 35.6325 10.8494 34.2144 10.8494 32.4709V22.9989C10.8494 21.2554 12.2766 19.8367 14.031 19.8367H64.0149C65.7687 19.8367 67.1953 21.2554 67.1953 22.9989V32.4715C67.1959 34.2144 65.7693 35.6325 64.0156 35.6325ZM14.031 22.2598C13.6276 22.2598 13.2869 22.5984 13.2869 22.9989V32.4715C13.2869 32.8786 13.6208 33.21 14.031 33.21H64.0149C64.4244 33.21 64.7578 32.8786 64.7578 32.4715V22.9989C64.7578 22.5978 64.4171 22.2598 64.0149 22.2598H14.031Z"/>
-              <path d="M57.0447 68.0821H20.999C17.6218 68.0821 14.8741 65.3512 14.8741 61.9933V34.421C14.8741 33.7523 15.4201 33.2095 16.0929 33.2095C16.7656 33.2095 17.3116 33.7523 17.3116 34.421V61.9933C17.3116 64.0148 18.9661 65.6589 20.999 65.6589H57.0447C59.077 65.6589 60.7308 64.0148 60.7308 61.9933V34.421C60.7308 33.7523 61.2768 33.2095 61.9496 33.2095C62.6223 33.2095 63.1683 33.7523 63.1683 34.421V61.9933C63.1683 65.3512 60.4213 68.0821 57.0447 68.0821Z"/>
-              <path d="M39.0225 68.0821C38.3498 68.0821 37.8038 67.5399 37.8038 66.8705V34.421C37.8038 33.7523 38.3498 33.2095 39.0225 33.2095C39.6953 33.2095 40.2413 33.7523 40.2413 34.421V66.8699C40.2413 67.5399 39.6959 68.0821 39.0225 68.0821Z"/>
-              <path d="M23.8113 22.2556C19.9966 20.2008 18.5731 15.4442 20.6383 11.6513C22.7022 7.86033 27.4864 6.44461 31.303 8.4958C37.117 11.6265 40.2565 20.3607 40.3869 20.7308L38.0877 21.5347C38.0585 21.4523 35.1256 13.31 30.1433 10.627C27.5078 9.21063 24.2062 10.1884 22.7821 12.8047C21.3567 15.4236 22.339 18.7069 24.9734 20.1251L23.8113 22.2556Z"/>
-              <path d="M54.2313 22.2556L53.071 20.1244C54.3477 19.4369 55.2782 18.2974 55.6926 16.9156C56.1063 15.5332 55.9534 14.0732 55.2617 12.8053C54.5719 11.5362 53.4263 10.6118 52.0363 10.2005C50.6457 9.78913 49.1783 9.94058 47.9023 10.6269C42.9201 13.3093 39.9871 21.4517 39.9579 21.5341L37.6587 20.7302C37.7891 20.3601 40.928 11.6259 46.7421 8.49578C48.5897 7.50109 50.7182 7.28179 52.7316 7.87788C54.7468 8.47337 56.4061 9.81397 57.4061 11.6513C58.4073 13.4881 58.6285 15.6029 58.0289 17.6062C57.4287 19.6089 56.0801 21.2597 54.2313 22.2556Z"/>
-              <path d="M61.9496 51.8567H16.0929C15.4201 51.8567 14.8741 51.3142 14.8741 50.6456C14.8741 49.9771 15.4201 49.4346 16.0929 49.4346H61.9496C62.6223 49.4346 63.1683 49.9771 63.1683 50.6456C63.1683 51.3142 62.6229 51.8567 61.9496 51.8567Z"/>
-            </svg>
-            <span class="catalog-additional__gift-img-text">Закажите все <br> и получите чехол для <br> кота в подарок!</span>
-          </a>
+          <svg class="catalog-additional__gift-svg" width="78" height="81" viewBox="0 0 78 81" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M64.0156 35.6325H14.031C12.2766 35.6325 10.8494 34.2144 10.8494 32.4709V22.9989C10.8494 21.2554 12.2766 19.8367 14.031 19.8367H64.0149C65.7687 19.8367 67.1953 21.2554 67.1953 22.9989V32.4715C67.1959 34.2144 65.7693 35.6325 64.0156 35.6325ZM14.031 22.2598C13.6276 22.2598 13.2869 22.5984 13.2869 22.9989V32.4715C13.2869 32.8786 13.6208 33.21 14.031 33.21H64.0149C64.4244 33.21 64.7578 32.8786 64.7578 32.4715V22.9989C64.7578 22.5978 64.4171 22.2598 64.0149 22.2598H14.031Z"/>
+            <path d="M57.0447 68.0821H20.999C17.6218 68.0821 14.8741 65.3512 14.8741 61.9933V34.421C14.8741 33.7523 15.4201 33.2095 16.0929 33.2095C16.7656 33.2095 17.3116 33.7523 17.3116 34.421V61.9933C17.3116 64.0148 18.9661 65.6589 20.999 65.6589H57.0447C59.077 65.6589 60.7308 64.0148 60.7308 61.9933V34.421C60.7308 33.7523 61.2768 33.2095 61.9496 33.2095C62.6223 33.2095 63.1683 33.7523 63.1683 34.421V61.9933C63.1683 65.3512 60.4213 68.0821 57.0447 68.0821Z"/>
+            <path d="M39.0225 68.0821C38.3498 68.0821 37.8038 67.5399 37.8038 66.8705V34.421C37.8038 33.7523 38.3498 33.2095 39.0225 33.2095C39.6953 33.2095 40.2413 33.7523 40.2413 34.421V66.8699C40.2413 67.5399 39.6959 68.0821 39.0225 68.0821Z"/>
+            <path d="M23.8113 22.2556C19.9966 20.2008 18.5731 15.4442 20.6383 11.6513C22.7022 7.86033 27.4864 6.44461 31.303 8.4958C37.117 11.6265 40.2565 20.3607 40.3869 20.7308L38.0877 21.5347C38.0585 21.4523 35.1256 13.31 30.1433 10.627C27.5078 9.21063 24.2062 10.1884 22.7821 12.8047C21.3567 15.4236 22.339 18.7069 24.9734 20.1251L23.8113 22.2556Z"/>
+            <path d="M54.2313 22.2556L53.071 20.1244C54.3477 19.4369 55.2782 18.2974 55.6926 16.9156C56.1063 15.5332 55.9534 14.0732 55.2617 12.8053C54.5719 11.5362 53.4263 10.6118 52.0363 10.2005C50.6457 9.78913 49.1783 9.94058 47.9023 10.6269C42.9201 13.3093 39.9871 21.4517 39.9579 21.5341L37.6587 20.7302C37.7891 20.3601 40.928 11.6259 46.7421 8.49578C48.5897 7.50109 50.7182 7.28179 52.7316 7.87788C54.7468 8.47337 56.4061 9.81397 57.4061 11.6513C58.4073 13.4881 58.6285 15.6029 58.0289 17.6062C57.4287 19.6089 56.0801 21.2597 54.2313 22.2556Z"/>
+            <path d="M61.9496 51.8567H16.0929C15.4201 51.8567 14.8741 51.3142 14.8741 50.6456C14.8741 49.9771 15.4201 49.4346 16.0929 49.4346H61.9496C62.6223 49.4346 63.1683 49.9771 63.1683 50.6456C63.1683 51.3142 62.6229 51.8567 61.9496 51.8567Z"/>
+          </svg>
+          <span class="catalog-additional__gift-text">Закажите все <br> и получите чехол для <br> кота в подарок!</span>
         </div>
       </div>
     </section>
@@ -454,5 +457,6 @@
       </div>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,6 +1,10 @@
 .product-additional {
-  border-top: 1px solid @special-grey;
+  border-bottom: 1px solid @special-grey;
   padding-bottom: 19px;
+}
+
+.product-additional:nth-child(1) {
+  border-top: 1px solid @special-grey;
 }
 
 .product-additional__title {
@@ -51,7 +55,6 @@
 
 @media (min-width: @tablet-width) {
   .product-additional {
-    border-bottom: 1px solid @special-grey;
     border-top: none;
     display: flex;
     flex-wrap: wrap;
@@ -94,6 +97,8 @@
     box-sizing: border-box;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 
   .product-additional__title {
