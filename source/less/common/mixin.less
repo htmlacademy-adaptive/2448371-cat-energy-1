@@ -14,3 +14,21 @@
     padding: 0 110px;
   }
 }
+
+.button {
+  background-color: @basic-green;
+  box-sizing: border-box;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

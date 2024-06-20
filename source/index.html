@@ -60,9 +60,15 @@
       </div>
       <nav class="header__navigation">
         <ul class="header__navigation-list header__navagation-index">
-          <li class="header__navigation-list-item header__navigation-list-current"><a class="header__navigation-list-link"><a class="header__navigation-list-link" href="index.html">главная</a></li>
-          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="catalog.html">каталог продукции</a></li>
-          <li class="header__navigation-list-item"><a class="header__navigation-list-link" href="form.html">подбор программы</a></li>
+          <li class="header__navigation-list-item header__navigation-list-current">
+            <a class="header__navigation-list-link" href="index.html">главная</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-link" href="catalog.html">каталог продукции</a>
+          </li>
+          <li class="header__navigation-list-item">
+            <a class="header__navigation-list-link" href="form.html">подбор программы</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -76,7 +82,7 @@
             <p class="main__tagline">Занялся собой? Займись котом!</p>
             <img class="promo-img--small" src="./img/index_promo-img.png" width="280" height="270" alt="Питание для кошек">
             <img class="promo-img--big" src="./img/promo-index-tablet.png" alt="Питание для кошек">
-            <a class="main__button button " href="form.html">
+            <a class="main__button" href="form.html">
               <span class="main__button-text">подобрать программу</span></a>
           </div>
         </div>
@@ -91,7 +97,7 @@
               <div class="program__link">
                 <a class="program__link-item" href="catalog.html">
                   <h3 class="program__link-item-title">каталог slim</h3>
-                  <svg width="24" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.8 5.2V.8L24 6Z" fill="#000"/></svg>
+                  <svg class="program__link-arrow" width="24" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.8 5.2V.8L24 6Z" fill="#000"/></svg>
                 </a>
               </div>
             </li>
@@ -101,7 +107,7 @@
               <div class="program__link">
                 <a class="program__link-item" href="catalog.html">
                   <h3 class="program__link-item-title">каталог pro</h3>
-                  <svg width="24" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.8 5.2V.8L24 6Z" fill="#000"/></svg>
+                  <svg class="program__link-arrow" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#000" stroke-width="2" d="M0 6h18"/><path d="m24 6-6.8 5.2V.8L24 6Z" fill="#000"/></svg>
                 </a>
               </div>
             </li>
@@ -169,13 +175,8 @@
     </section>
     <section class="location">
       <div class="location__wrapper" id="map">
-        <img class="location__img" src="./img/location.jpg" alt="Карта офиса">
-        <!-- <div style="position:relative;overflow:hidden;">
-          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
-          <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс Карты</a>
-          <iframe class="contacts__map-frame" src="https://yandex.ru/map-widget/v1/?ll=30.323036%2C59.938631&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
-          </iframe>
-        </div> -->
+        <!-- <img class="location__img" src="./img/location.jpg" alt="Карта офиса"> -->
+        <iframe class="location__wrapper-map" src="https://yandex.ru/map-widget/v1/?ll=30.322843%2C59.938618&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=17" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
       </div>
     </section>
   </main>
