@@ -50,8 +50,11 @@
             <h2 class="main__title">Функциональное
               питание для котов</h2>
             <p class="main__tagline">Занялся собой? Займись котом!</p>
-            <img class="promo-img--small" src="./img/index_promo-img.png" width="280" height="270" alt="Питание для кошек">
-            <img class="promo-img--big" src="./img/promo-index-tablet.png" alt="Питание для кошек">
+            <picture class="promo__picture">
+              <source media="(min-width: 1440px)" srcset="./img/index-can.png 1x, ./img/index-can@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/index-can-tablet.png 1x, ./img/index-can-tablet@2x 2x.png">
+             <img class="promo-img" src="./img/index-can-mobile.png" width="280" height="270" alt="Питание для кошек" srcset="./img/index-can-mobile@2x.png 2x">
+            </picture>
             <a class="main__button" href="form.html">
               <span class="main__button-text">подобрать программу</span></a>
           </div>
