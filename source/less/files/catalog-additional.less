@@ -37,7 +37,7 @@
 .catalog-additional__gift {
   width: 280px;
   height: 290px;
-  background-image: url("../img/gift-img.png");
+  background-image: url("../img/gift_mobile.png");
   background-size: cover;
   text-decoration: none;
   color: @white;
@@ -46,7 +46,11 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift_mobile@2x.png");
+  }
 }
 
 .catalog-additional__gift::after {
@@ -107,6 +111,14 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    background-image: url("../img/gift_tablet.png");
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 12px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift_tablet@2x.png");
+    }
   }
 
   .catalog-additional__title::before {
@@ -145,5 +157,12 @@
     height: 288px;
     padding-bottom: 0;
     background-size: cover;
+    background-image: url("../img/gift_desktop.png");
+    flex-direction: column;
+    justify-content: normal;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift_desktop@2x.png");
+    }
   }
 }

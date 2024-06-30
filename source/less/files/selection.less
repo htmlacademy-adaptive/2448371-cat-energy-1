@@ -79,12 +79,12 @@
     stroke: @basic-green;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border-color: @status-error;
     outline: 1px solid @status-error;
   }
 
-  &:invalid + .selection__fields-icon path {
+  &:focus:invalid + .selection__fields-icon path {
     stroke: @status-error;
   }
 }
@@ -200,6 +200,7 @@
   padding: 14px;
   height: 150px;
   box-sizing: border-box;
+  border: 1px solid #e7e7e7;
 }
 
 .selection__fields--comment {
@@ -292,7 +293,7 @@
   content: "";
   position: absolute;
   display: inline-block;
-  background-image: url("../img/check-small.svg");
+  background-image: url("../img/icons/check-small.svg");
   background-repeat: no-repeat;
   background-position: center;
   width: 26px;
@@ -415,7 +416,7 @@
   .selection__fields-item-text--checkbox::after {
     width: 26px;
     height: 26px;
-    background-image: url("../img/check.svg");
+    background-image: url("../img/icons/check.svg");
     top: 20px;
     left: -8px;
   }

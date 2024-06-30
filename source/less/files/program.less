@@ -106,11 +106,6 @@
   }
 }
 
-.program__link-arrow {
-  width: 24px;
-  // что тут писать:(
-}
-
 .program__link-item-title {
   margin: 0;
   font-weight: 400;
@@ -118,6 +113,19 @@
   line-height: 100%;
   text-transform: uppercase;
   color: @black;
+  position: relative;
+}
+
+.program__link-item-title::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 12px;
+  right: -47px;
+  top: 4px;
 }
 
 @media (min-width: @tablet-width) {
