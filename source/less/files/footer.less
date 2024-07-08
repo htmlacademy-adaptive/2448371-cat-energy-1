@@ -35,26 +35,24 @@
   height: 22px;
   text-align: center;
   align-items: center;
+  position: relative;
 }
 
 .footer__social-icon path {
   fill: @special-grey-2;
 }
 
-.footer__social-link:hover .footer__social-icon path,
-.footer__social-link:focus .footer__social-icon path {
+.footer__social-link:hover .footer__social-icon,
+.footer__social-link:focus .footer__social-icon {
   fill: @basic-green;
 }
 
-.footer__social-link:active .footer__social-icon path {
+.footer__social-link:active .footer__social-icon {
   opacity: 0.3;
   fill: @basic-green;
 }
 
-.footer__logo-text {
-  width: 128px;
-  height: 24px;
-
+.footer__logo-link {
   &:hover {
     opacity: 0.8;
   }
@@ -63,6 +61,11 @@
   &:focus {
     opacity: 0.4;
   }
+}
+
+.footer__logo-text {
+  width: 128px;
+  height: 24px;
 }
 
 .footer__developer-link {

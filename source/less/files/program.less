@@ -116,16 +116,13 @@
   position: relative;
 }
 
-.program__link-item-title::before {
-  content: "";
-  display: block;
-  background-image: url("../img/icons/arrow.svg");
-  background-repeat: no-repeat;
-  position: absolute;
+.program__link-item:hover .program__link-arrow {
   width: 32px;
-  height: 12px;
-  right: -47px;
-  top: 4px;
+}
+
+.program__link-item:active .program__link-arrow {
+  width: 32px;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
