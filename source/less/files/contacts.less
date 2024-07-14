@@ -38,12 +38,29 @@
 @media (min-width: @tablet-width) {
   .contacts__info {
     padding: 61px 40px;
+    min-height: 78px;
   }
 
   .contacts__info-title {
     font-weight: 400;
     font-size: 20px;
     line-height: 130%;
+    width: 170px;
+    flex: none;
+  }
+
+  .contacts__info-adress-street {
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 19px;
+  }
+
+  .contacts__info-adress-city {
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 
@@ -56,11 +73,20 @@
   .contacts__info {
     position: absolute;
     z-index: 1;
-    top: 95px;
+    top: 100px;
     width: 570px;
     background-color: @white;
     padding: 60px 80px;
     box-sizing: border-box;
+  }
+
+  .contacts__info-title {
+    margin-right: 80px;
+  }
+
+  .contacts__info-adress-city,
+  .contacts__info-adress-street {
+    text-align: left;
   }
 
   .contacts__info-text {

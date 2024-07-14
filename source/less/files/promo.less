@@ -1,5 +1,5 @@
 .promo {
-  padding-bottom: 20px;
+  padding-bottom: 2px;
   position: relative;
 }
 
@@ -71,7 +71,7 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    padding-bottom: 82px;
+    padding-bottom: 52px;
     position: static;
   }
 
@@ -110,6 +110,7 @@
   .promo__wraper {
     display: grid;
     grid-template-columns: 437px 163px 610px;
+    grid-template-rows: 190px 42px 50px;
   }
 
   .promo-img {
@@ -118,5 +119,8 @@
     grid-column: 2/4;
     margin: 0;
     grid-row: 1 / 5;
+    position: relative;
+    top: -81px;
+    right: -10px;
   }
 }
