@@ -1,5 +1,5 @@
 .selection {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -13,6 +13,8 @@
   line-height: 100%;
   color: @black;
   margin-bottom: 37px;
+  margin-top: 0;
+  padding-top: 28px;
 }
 
 .selection__description {
@@ -29,7 +31,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
   padding: 0;
   margin: 0;
 }
@@ -48,6 +50,9 @@
   color: @special-dark-grey;
   text-transform: uppercase;
   white-space: nowrap;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
 }
 
 .selection__fields-input-text {
@@ -62,7 +67,8 @@
   line-height: 112%;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
-  padding: 13px;
+  padding: 15px;
+  padding-top: 16px;
 
   &:hover {
     border-color: @special-grey;
@@ -103,7 +109,7 @@
 }
 
 .selection__fields--program {
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 19px;
   margin-bottom: 26px;
   position: relative;
@@ -187,7 +193,7 @@
 .selection__fields-block-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 15px;
 }
 
 .selection__fields-text-area {
@@ -210,6 +216,7 @@
 
 .selection__fields--comment .selection__fields-title {
   width: 130px;
+  margin-bottom: 23px;
 }
 
 .selection__fields--comment::before {
@@ -257,7 +264,7 @@
   height: 30px;
   border-radius: 50%;
   border: 1px solid @special-grey;
-  margin-right: 20px;
+  margin-right: 15px;
   box-sizing: border-box;
 }
 
@@ -285,7 +292,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid @special-grey;
-  margin-right: 20px;
+  margin-right: 15px;
   box-sizing: border-box;
 }
 
@@ -309,7 +316,7 @@
 }
 
 .selection__fields--extra {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   position: relative;
 }
 
@@ -359,10 +366,16 @@
     margin-bottom: 54px;
     font-size: 60px;
     margin-left: 40px;
+    padding-top: 38px;
+  }
+
+  .selection {
+    margin-bottom: 61px;
+    padding-bottom: 0;
   }
 
   .selection__description {
-    margin-bottom: 66px;
+    margin-bottom: 64px;
     font-size: 20px;
     line-height: 150%;
     margin-left: 40px;
@@ -373,7 +386,11 @@
   }
 
   .selection__fields {
-    gap: 20px;
+    gap: 21px;
+  }
+
+  .selection__fields-form {
+    min-height: 52px;
   }
 
   .selection__fields-block-wrapper {
@@ -385,22 +402,31 @@
   .selection__fields-title {
     font-size: 36px;
     line-height: 100%;
-    margin-bottom: 76px;
+    margin-bottom: 54px;
     padding-left: 40px;
     margin-left: -40px;
   }
 
   .selection__fields-text {
     font-size: 20px;
+    margin-right: 13px;
+  }
+
+  .selection__fields-icon {
+    top: 16px;
+    right: 14px;
   }
 
   .selection__fields-input-text {
     font-size: 20px;
+    height: 52px;
+    padding: 16px 20px 15px;
   }
 
   .selection__fields-item-text--radio::before {
     width: 40px;
     height: 40px;
+    margin-right: 18px;
   }
 
   .selection__fields-item-text--radio::after {
@@ -411,6 +437,7 @@
   .selection__fields-item-text--checkbox::before {
     width: 40px;
     height: 40px;
+    margin-right: 19px;
   }
 
   .selection__fields-item-text--checkbox::after {
@@ -449,7 +476,7 @@
   .selection__fields--comment::before,
   .selection__fields--extra::before {
     width: 300%;
-    top: 20px;
+    top: 21px;
     left: -100%;
   }
 
@@ -458,7 +485,7 @@
   }
 
   .selection__fields--comment .selection__fields-title {
-    margin-bottom: 87px;
+    margin-bottom: 65px;
     width: 260px;
   }
 
@@ -466,25 +493,31 @@
     font-size: 20px;
     line-height: 150%;
     height: 175px;
+    padding-top: 12px;
+    padding-left: 20px;
   }
 
   .selection__fields--extra {
-    margin-bottom: 65px;
+    margin-bottom: 52px;
   }
 
   .selection__fields--extra .selection__fields-title {
     width: 292px;
+    margin-bottom: 37px;
   }
 
   .selection__fields-list {
     margin-left: 27px;
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 12px;
   }
 
   .selection__fields-list--extra {
     margin-left: 0;
+    flex-direction: row;
+    row-gap: 32px;
+    column-gap: 95px;
   }
 
   .selection__fields--extra .selection__fields-list-item {
@@ -524,13 +557,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .selection {
+    margin-bottom: 80px;
+  }
+
   .selection__title {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     margin-left: 0;
+    padding-top: 41px;
   }
 
   .selection__description {
-    margin-bottom: 66px;
+    margin-bottom: 65px;
     margin-left: 0;
   }
 
@@ -538,17 +576,19 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 80px 70px;
+    gap: 60px 70px;
+    justify-content: space-between;
   }
 
   .selection__fields-block-wrapper {
     display: flex;
     flex-direction: row;
     gap: 80px;
+    margin-bottom: 11px;
   }
 
   .selection__fields--personal {
-    margin-bottom: 0;
+    margin-bottom: 9px;
     width: 570px;
   }
 
@@ -580,12 +620,16 @@
     justify-content: space-between;
   }
 
+  .selection__fields-icon {
+    right: 16px;
+  }
+
   .selection__fields-title {
     width: 100%;
   }
 
   .selection__fields--contacts .selection__fields-title {
-    margin-bottom: 76px;
+    margin-bottom: 54px;
   }
 
   .selection__fields-block {
@@ -593,32 +637,40 @@
   }
 
   .selection__fields--comment {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
   }
 
   .selection__fields--comment .selection__fields-title {
-    margin-bottom: 78px;
+    margin-bottom: 57px;
   }
 
   .selection__fields-text-area {
     width: 100%;
+    padding-top: 8px;
+  }
+
+  .selection__form .selection__fields--extra {
+    row-gap: 32px;
   }
 
   .selection__fields--extra {
     margin-bottom: 0;
     width: 100%;
+    row-gap: 31px;
   }
 
   .selection__fields--extra .selection__fields-title {
-    margin-bottom: 57px;
+    margin-bottom: 26px;
   }
 
   .selection__fields-list--extra {
     flex-wrap: nowrap;
     flex-direction: row;
+    margin-left: 0;
+    column-gap: 75px;
   }
 
   .selection__fields-button {
