@@ -45,6 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  top: -1px;
 }
 
 .instruction__item-text {
@@ -65,7 +66,7 @@
   height: 32px;
   position: absolute;
   left: 18px;
-  top: 18px;
+  top: 15px;
 }
 
 .instruction__item--2 .instruction__item-text::before {
@@ -76,7 +77,7 @@
   height: 32px;
   position: absolute;
   left: 18px;
-  top: 18px;
+  top: 15px;
 }
 
 .instruction__item--3 .instruction__item-text::before {
@@ -86,8 +87,8 @@
   width: 30px;
   height: 32px;
   position: absolute;
-  left: 18px;
-  top: 18px;
+  left: 17px;
+  top: 15px;
 }
 
 .instruction__item--4 .instruction__item-text::before {
@@ -97,10 +98,13 @@
   width: 30px;
   height: 32px;
   position: absolute;
-  left: 18px;
-  top: 16px;
+  left: 17px;
+  top: 15px;
 }
 
+.instruction__item--4-br {
+  display: none;
+}
 
 .instruction__item-box {
   width: 60px;
@@ -111,7 +115,8 @@
 
 @media (min-width: @tablet-width) {
   .instruction {
-    padding-bottom: 47px;
+    padding-bottom: 79px;
+    border: 1px solid @basic-grey-2;
   }
 
   .instruction__title {
@@ -124,8 +129,7 @@
   .instruction__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 37px;
-    justify-content: space-between;
+    gap: 71px 153px;
     counter-reset: number 0;
   }
 
@@ -145,24 +149,12 @@
     margin-right: 0;
   }
 
-  .instruction__item--1 .instruction__item-text::before {
-    left: 27px;
-    top: 66px;
-  }
-
-  .instruction__item--2 .instruction__item-text::before {
-    left: 27px;
-    top: 66px;
-  }
-
-  .instruction__item--3 .instruction__item-text::before {
-    left: 27px;
-    top: 66px;
-  }
-
+  .instruction__item--1 .instruction__item-text::before,
+  .instruction__item--2 .instruction__item-text::before,
+  .instruction__item--3 .instruction__item-text::before,
   .instruction__item--4 .instruction__item-text::before {
     left: 27px;
-    top: 66px;
+    top: -86px;
   }
 
   .instruction__item::after {
@@ -175,8 +167,12 @@
     text-align: center;
     color: @basic-grey;
     z-index: -1;
-    right: 0;
-    bottom: 0;
+    right: -17px;
+    bottom: -33px;
+  }
+
+  .instruction__item:nth-child(1)::after {
+    right: 6px;
   }
 
   .instruction__illustration {
@@ -189,14 +185,21 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    width: auto;
+    width: 245px;
     color: @special-dark-grey;
+    position: relative;
+    top: 31px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .instruction {
     padding-bottom: 69px;
+    border: none;
+  }
+
+  .instruction__title {
+    margin-bottom: 34px;
   }
 
   .instruction__item {
@@ -209,8 +212,15 @@
     margin-bottom: 31px;
   }
 
+  .instruction__item::after {
+    bottom: 0;
+  }
+
   .instruction__list {
-    justify-content: space-between;
-    gap: 0;
+    gap: 95px;
+  }
+
+  .instruction__item-text {
+    top: -1px;
   }
 }

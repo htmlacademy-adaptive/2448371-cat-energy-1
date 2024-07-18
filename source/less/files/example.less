@@ -13,8 +13,7 @@
   line-height: 111%;
   text-align: left;
   color: @black;
-  margin: 0;
-  margin-bottom: 37px;
+  margin: -2px 0 40px;
   font-weight: 400;
 }
 
@@ -36,8 +35,8 @@
   display: flex;
   position: relative;
   width: 124px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 18px;
   border: 1px solid @special-grey;
   border-radius: 5px;
   margin-bottom: 34px;
@@ -94,6 +93,7 @@
     background-color: transparent;
     padding-top: 45px;
     position: relative;
+    padding-bottom: 71px;
   }
 
   .example__title {
@@ -110,7 +110,8 @@
   }
 
   .example__result-item {
-    width: 162px;
+    width: 160px;
+    padding-top: 15px;
   }
 
   .example__result-stats {
@@ -126,8 +127,11 @@
 
   .example__result-text {
     background-color: @white;
-    width: 128px;
+    width: 160px;
     bottom: -6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
   }
 
   .example__price {
@@ -135,6 +139,12 @@
     line-height: 100%;
     width: 185px;
     text-align: right;
+    padding-top: 12px;
+  }
+
+  .example__price span {
+    top: 9px;
+    position: relative;
   }
 
   .example__result {
@@ -146,6 +156,8 @@
     margin: 0 auto;
     width: 560px;
     height: 512px;
+    top: -26px;
+    position: relative;
   }
 
   .example__slider-image {
@@ -174,7 +186,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       align-items: flex-start;
-      height: 600px;
+      height: 521px;
     }
 
     .example__title {
@@ -182,7 +194,7 @@
     }
 
     .example__text {
-      width: 436px;
+      width: 432px;
       margin-bottom: 69px;
     }
 
@@ -192,13 +204,23 @@
     }
 
     .example__result-stats {
-      margin-bottom: 55px;
+      margin-bottom: 47px;
+      gap: 36px;
+    }
+
+    .example__price span {
+      top: 0;
+      margin-left: 63px;
+    }
+
+    .example__result-title {
+      margin: 0 auto;
     }
 
     .example__result-item {
       margin-bottom: 0;
       width: 164px;
-      height: 77px;
+      padding-top: 16px;
     }
 
     .example__result-text {
@@ -211,8 +233,9 @@
       margin: 0;
     }
 
-    .example__price span {
-      margin-left: 63px;
+    .example__slider {
+      right: -56px;
+      top: -10px;
     }
   }
 }

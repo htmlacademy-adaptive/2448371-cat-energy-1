@@ -1,5 +1,5 @@
 .promo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -46,6 +46,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .promo {
+    padding-top: 40px;
+    margin-bottom: 0;
+  }
+
   .promo::before {
     display: none;
   }
@@ -71,8 +76,9 @@
 
 @media (min-width: @desktop-width) {
   .promo {
-    padding-bottom: 82px;
+    padding-bottom: 50px;
     position: static;
+    padding-top: 0;
   }
 
   .promo::before {
@@ -109,7 +115,8 @@
 
   .promo__wraper {
     display: grid;
-    grid-template-columns: 437px 163px 610px;
+    grid-template-columns: 447px 163px 610px;
+    grid-template-rows: 190px 42px 78px;
   }
 
   .promo-img {

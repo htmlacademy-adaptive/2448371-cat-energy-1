@@ -5,15 +5,17 @@
 
 .catalog-additional {
   overflow: hidden;
+  padding-top: 25px;
 }
 
 .catalog-additional__title {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
   font-size: 24px;
   line-height: 100%;
   font-weight: 400;
   background-color: @white;
+  width: 245px;
 }
 
 .catalog-additional__title::before {
@@ -77,6 +79,7 @@
   font-size: 16px;
   line-height: 125%;
   text-align: center;
+  font-family: @second-family;
 }
 
 @media (min-width: @tablet-width) {
@@ -100,10 +103,11 @@
 
   .catalog-additional__title {
     font-size: 36px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
     padding-left: 40px;
     padding-right: 40px;
     display: inline-block;
+    width: 339px;
   }
 
 
@@ -113,12 +117,21 @@
     background-repeat: no-repeat;
     background-image: url("../img/gift_tablet.png");
     flex-direction: row;
-    justify-content: space-around;
     padding-bottom: 12px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift_tablet@2x.png");
     }
+  }
+
+  .catalog-additional__gift-svg {
+    padding-left: 79px;
+    margin-right: 265px;
+  }
+
+  .catalog-additional__gift-text {
+    text-align: left;
+    padding-top: 14px;
   }
 
   .catalog-additional__title::before {
@@ -128,10 +141,10 @@
   }
 }
 
-
 @media (min-width: @desktop-width) {
   .catalog-additional {
-    padding-bottom: 87px;
+    padding-bottom: 53px;
+    padding-top: 0;
   }
 
   .catalog-additional__title {
@@ -164,5 +177,15 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift_desktop@2x.png");
     }
+  }
+
+  .catalog-additional__gift-svg {
+    position: relative;
+    left: 94px;
+  }
+
+  .catalog-additional__gift-text {
+    text-align: center;
+    padding-top: 0;
   }
 }
