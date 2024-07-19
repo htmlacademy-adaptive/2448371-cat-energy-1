@@ -90,44 +90,78 @@
 
 
 .example__slider-toggle {
-  position: absolute;
-  content: " ";
-  left: 49.5%;
-  width: 4px;
-  height: 256px;
-  background-color: #666666;
-  border: none;
-  padding: 0;
-  border-radius: 2px;
-
-  &:hover {
-    background-color: #68b738;
-
-    & button {
-      background-image: url("../img/thumb--hover.svg");
-    }
-  }
-
-  &:active {
-    background-color: #5eaa2f;
-
-    & button {
-      background-image: url("../img/thumb--active.svg");
-    }
-  }
+  position: relative;
+  height: inherit;
 }
+
+// .example__slider-toggle {
+//   position: absolute;
+//   content: " ";
+//   left: 49.5%;
+//   width: 4px;
+//   height: 256px;
+//   background-color: #666666;
+//   border: none;
+//   padding: 0;
+//   border-radius: 2px;
+
+//   &:hover {
+//     background-color: #68b738;
+
+//     & button {
+//       background-image: url("../img/thumb--hover.svg");
+//     }
+//   }
+
+//   &:active {
+//     background-color: #5eaa2f;
+
+//     & button {
+//       background-image: url("../img/thumb--active.svg");
+//     }
+//   }
+// }
 
 .example__slider-toggle-button {
   position: absolute;
-  right: -18px;
+  right: 42.5%;
   width: 40px;
   height: 40px;
-  background-image: url("../img/thumb.svg");
+  background-image: url(../img/thumb.svg);
   background-color: transparent;
-  border: none;
+  border: 0;
   cursor: pointer;
-  top: 42.5%;
+  top: 41.5%;
+
+  &:hover {
+      background-image: url("../img/thumb--hover.svg");
+    }
+
+  &:active {
+    background-image: url("../img/thumb--active.svg");
+  }
 }
+
+.example__slider-toggle-button::after {
+  position: absolute;
+  content: " ";
+  left: 44.5%;
+  width: 4px;
+  height: 256px;
+  background-color: @special-grey-2;
+  border: 0;
+  padding: 0;
+  border-radius: 2px;
+  top: -107px;
+}
+
+  .example__slider-toggle-button:hover::after {
+    background-color: @basic-green;
+  }
+
+  .example__slider-toggle-button:active::after {
+   background-color: @basic-green-2;
+  }
 
 @media (min-width: @tablet-width) {
   .example {
@@ -217,12 +251,13 @@
     background-color: @basic-grey;
   }
 
-  .example__slider-toggle {
+  .example__slider-toggle-button::after {
     height: 512px;
-    top: 0;
+    top: -236px;
   }
 
   .example__slider-toggle-button {
+    right: 46.5%;
     top: 45.5%;
   }
 }
@@ -289,11 +324,12 @@
     top: -10px;
   }
 
-  .example__slider-toggle {
+  .example__slider-toggle-button::after {
     height: 512px;
   }
 
   .example__slider-toggle-button {
-    top: 47%;
+    top: 45%;
+    right: 46%;
   }
 }
