@@ -127,15 +127,15 @@
   right: 42.5%;
   width: 40px;
   height: 40px;
-  background-image: url(../img/thumb.svg);
+  background-image: url("../img/thumb.svg");
   background-color: transparent;
   border: 0;
   cursor: pointer;
   top: 41.5%;
 
   &:hover {
-      background-image: url("../img/thumb--hover.svg");
-    }
+    background-image: url("../img/thumb--hover.svg");
+  }
 
   &:active {
     background-image: url("../img/thumb--active.svg");
@@ -155,13 +155,13 @@
   top: -107px;
 }
 
-  .example__slider-toggle-button:hover::after {
-    background-color: @basic-green;
-  }
+.example__slider-toggle-button:hover::after {
+  background-color: @basic-green;
+}
 
-  .example__slider-toggle-button:active::after {
-   background-color: @basic-green-2;
-  }
+.example__slider-toggle-button:active::after {
+  background-color: @basic-green-2;
+}
 
 @media (min-width: @tablet-width) {
   .example {
