@@ -207,6 +207,11 @@
   height: 150px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+
+  &:focus {
+    border-color: @special-dark-grey;
+    outline: 1px solid @special-dark-grey;
+  }
 }
 
 .selection__fields--comment {
@@ -238,6 +243,7 @@
   color: @special-dark-grey;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -583,7 +589,9 @@
   .selection__fields-block-wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 80px;
+    column-gap: 30px;
     margin-bottom: 11px;
   }
 
@@ -667,10 +675,10 @@
   }
 
   .selection__fields-list--extra {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-left: 0;
-    column-gap: 75px;
+    column-gap: 73px;
   }
 
   .selection__fields-button {
