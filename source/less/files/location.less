@@ -6,6 +6,7 @@
 
 .location__wrapper {
   overflow: hidden;
+  position: relative;
 }
 
 .location__wrapper-map {
@@ -15,14 +16,45 @@
   margin-bottom: -3px;
 }
 
+.location__nojs {
+  position: absolute;
+  top: 0;
+  height: 320px;
+  width: 100%;
+  background-image: url("../img/location-mobile.jpg");
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location-mobile@2x.jpg");
+  }
+}
+
 @media (min-width: @tablet-width) {
   .location__wrapper-map {
     height: 400px;
+  }
+
+  .location__nojs {
+    height: 400px;
+    background-image: url("../img/location-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.jpg");
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .location__wrapper {
     margin-bottom: -5px;
+  }
+
+  .location__nojs {
+    height: 400px;
+    background-image: url("../img/location-desctope.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desctope@2x.jpg");
+    }
   }
 }
