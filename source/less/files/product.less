@@ -160,14 +160,11 @@
 
 
 @media (min-width: @tablet-width) {
-  .product__wrapper::after {
-    content: "";
-    position: absolute;
-    width: 324px;
-    height: 430px;
-    background-color: @basic-grey;
-    bottom: 0;
-    z-index: -1;
+  .product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .product__wrapper {

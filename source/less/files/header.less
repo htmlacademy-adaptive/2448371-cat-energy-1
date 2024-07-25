@@ -87,9 +87,11 @@
 }
 
 .header__navigation-list {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 1px 0 0;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
 }
 
 .header__navigation-list-item {
@@ -144,7 +146,7 @@
   .header__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -168,12 +170,25 @@
     display: none;
   }
 
-  .header__navigation-list {
+  .header__navigation--closed {
+    display: block;
+  }
+
+  .header__navigation {
+    max-width: calc(100% - 204px);
+    height: 50px;
     display: flex;
-    gap: 33px;
     align-items: center;
-    min-width: 440px;
-    justify-content: space-between;
+    margin: 4px 6px 0 0;
+  }
+
+  .header__navigation-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 33px;
+    row-gap: 20px;
+    max-width: 100%;
+    margin-top: 0;
   }
 
   .header__navigation-list-item {
@@ -190,30 +205,32 @@
     display: none;
   }
 
-  .header__navigation--closed {
-    display: block;
-  }
-
   .header__navigation-list-current {
     border-bottom: 2px solid @basic-green;
-    margin-bottom: -8px;
-    padding-bottom: 9px;
-    padding-top: 1px;
+    margin-bottom: -5px;
+    padding-bottom: 7px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .header__navigation {
     min-width: 475px;
+    max-width: calc(100% - 240px);
+  }
+
+  .header__navigation-index {
+    max-width: 48%;
   }
 
   .header__navigation-list-item {
     padding-right: 1px;
     padding-left: 0;
+    font-size: 20px;
   }
 
   .header__navigation-list-current {
-    padding-top: 3px;
+    margin-bottom: -9px;
+    padding-bottom: 8px;
   }
 
   .header__container {
@@ -236,11 +253,11 @@
     height: 21px;
   }
 
-  .header__navagation-index .header__navigation-list-link {
+  .header__navigation-index-list .header__navigation-list-link {
     color: @white;
   }
 
-  .header__navagation-index .header__navigation-list-current {
+  .header__navigation-index-list .header__navigation-list-current {
     border-bottom: 2px solid @white;
   }
 }

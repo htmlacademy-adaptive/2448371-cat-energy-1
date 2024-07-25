@@ -239,25 +239,31 @@
   }
 
   .example__container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 432px 561px;
+    grid-template-rows: auto auto auto;
     height: 521px;
+    justify-content: space-between;
   }
 
   .example__title {
     margin-bottom: 146px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 
   .example__text {
     width: 432px;
     margin-bottom: 69px;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 
   .example__result {
     flex-direction: column;
     margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 3/4;
   }
 
   .example__result-stats {
@@ -291,8 +297,14 @@
   }
 
   .example__slider {
-    right: -56px;
+    right: 1px;
     top: -10px;
+    grid-column: 2 / 3;
+    grid-row: -4 / -1;
+    justify-self: center;
+    margin-top: 1px;
+    align-self: end;
+    margin-bottom: 10px;
   }
 
   .example__slider-toggle-button::after {

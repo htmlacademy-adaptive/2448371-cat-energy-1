@@ -63,7 +63,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -76,6 +75,11 @@
     margin-left: 0;
     box-sizing: border-box;
     padding-top: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 16%, rgba(242, 242, 242, 1) 16%);
+  }
+
+  .catalog__list-item + .product--more {
+    background: none;
   }
 
   .catalog__list-item::after {
